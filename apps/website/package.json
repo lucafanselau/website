@@ -1,0 +1,24 @@
+{
+    "name": "@luca.fanselau/website",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev --experimental-integrations",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview"
+    },
+    "devDependencies": {
+        "@unocss/preset-web-fonts": "^0.33.5",
+        "astro": "^1.0.0-beta.28",
+        "prettier-plugin-astro": "^0.0.12"
+    },
+    "dependencies": {
+        "@iconify-json/carbon": "^1.1.4",
+        "@iconify-json/ion": "^1.1.1",
+        "@iconify-json/mdi": "^1.1.12",
+        "@unocss/preset-icons": "^0.33.4",
+        "@unocss/reset": "^0.33.4",
+        "unocss": "^0.33.4"
+    }
+}
