@@ -1,17 +1,18 @@
 {
-  "name": "@luca.fanselau/website monorepo",
-  "version": "0.0.1",
-  "private": true,
-  "workspaces": {
-    "packages": ["packages/*", "apps/*"]
-  },
-  "scripts": {
-    "build": "turbo run build",
-    "format": "prettier --write '**/*.{ts,tsx,md,sol}'"
-  },
-  "devDependencies": {
-    "prettier": "^2.5.1",
-    "turbo": "latest",
-    "typescript": ">=3.0.0"
-  }
+    "name": "@luca.fanselau/website monorepo",
+    "version": "0.0.1",
+    "private": true,
+    "workspaces": {
+        "packages": ["packages/*", "apps/*"]
+    },
+    "scripts": {
+        "dev": "pnpm run --filter @luca.fanselau/website dev",
+        "build": "turbo run build",
+        "format": "prettier --write '**/*.{ts,tsx,md,sol}'"
+    },
+    "devDependencies": {
+        "prettier": "^2.5.1",
+        "turbo": "latest",
+        "typescript": ">=3.0.0"
+    }
 }

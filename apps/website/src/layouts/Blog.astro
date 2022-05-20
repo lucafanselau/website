@@ -1,0 +1,17 @@
+---
+import Layout from "./Layout.astro";
+import Progress from "./../components/solid/Progress.tsx";
+
+const { content } = Astro.props;
+---
+<Layout>
+
+    <div class="flex items-start justify-center">
+        <div class="fixed top-[calc(50%+80px)] left-[calc(50%-38ch)] translate--50%">
+            <Progress client:only content={content} />
+        </div>
+        <article class="text-base prose">
+            <slot />
+        </article>
+    </div>
+</Layout>

@@ -1,9 +1,8 @@
 // prettier.config.js or .prettierrc.js
 module.exports = {
-  trailingComma: 'es5',
+  arrowParens: "avoid",
+  useTabs: false,
+  printWidth: 140,
   tabWidth: 4,
-  semi: false,
-  singleQuote: true,
   plugins: [require.resolve('prettier-plugin-astro')],
-
-}
+};

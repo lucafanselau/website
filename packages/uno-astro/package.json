@@ -1,16 +1,18 @@
 {
-  "name": "package-name",
-  "description": "description",
-  "version": "1.0.0",
-  "author": "Luca Fanselau <luca.fanselau@outlook.com>",
-  "license": "MIT",
-  "main": "app/main.js",
-  "scripts": {},
-  "devDependencies": {
-    "astro": "^1.0.0-beta.28",
-    "typescript": ">=3.0.0"
-  },
-  "peerDependencies": {
-    "astro": "^1.0.0-beta.28"
-  }
+    "name": "uno-astro",
+    "description": "description",
+    "version": "1.0.0",
+    "author": "Luca Fanselau <luca.fanselau@outlook.com>",
+    "license": "MIT",
+    "main": "index.ts",
+    "scripts": {},
+    "devDependencies": {
+        "astro": "^1.0.0-beta.28",
+        "vite": "^2.9.0",
+        "typescript": ">=3.0.0",
+        "unocss": "^0.33.4"
+    },
+    "peerDependencies": {
+        "astro": "^1.0.0-beta.28"
+    }
 }

@@ -1,20 +1,39 @@
 ---
+import Header from "../components/Header.astro";
+import { baseSize } from "../utils"
+
 export interface Props {
     title: string
 }
 
-const { title, content } = Astro.props as Props
+const { title } = Astro.props as Props
+
+
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-18px">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{title}</title>
     </head>
-        <body class="m-0 font-sans bg-background text-text">
-            <slot />
-        </body>
+    <body class="m-0 font-sans bg-background text-text">
+        <Header />
+        <slot />
+    </body>
 </html>
+
+<style is:global>
+p {
+    margin: 0px;
+}
+a {
+    --at-apply: "text-text text-22px font-600"
+}
+:target {
+    display: block;
+    scroll-margin-top: 96px;
+}
+</style>
