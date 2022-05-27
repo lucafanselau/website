@@ -30,7 +30,7 @@ const Progress: Component = ({ content }: { content: ContentType }) => {
         // add the initial scroll position
         const progress = correctTop(top + position());
         const relative = Math.max(Math.min(progress / scrollHeight, 1), 0);
-        return { relative, h };
+        return { relative, h: h.depth === 1 ? { ...h, text: "Start" } : h };
     });
 
     return (
