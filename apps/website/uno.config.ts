@@ -34,5 +34,17 @@ export default defineConfig({
         }),
         presetTypography(),
     ],
+    rules: [
+        [
+            "gradient-p",
+            {
+                "background-image": "linear-gradient(90deg, #FFD6BA 0%, #BEE3DB 72.47%)",
+                "background-clip": "text",
+                "text-fill-color": "transparent",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent",
+            },
+        ],
+    ],
     transformers: [transformerDirective()],
 });

@@ -2,6 +2,7 @@
 title: Test Blog entry
 layout: ../../layouts/Blog.astro
 description: The first thing that is here, also the worst thing. However that way it can't get worse :).
+tags: ["Test", "Programming"]
 ---
 
 # My first blog entry

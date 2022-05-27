@@ -2,17 +2,45 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
-const posts = await Astro.glob('./posts/*.md');
+type Frontmatter = {
+    title: string;
+    description: string;
+    tags?: string[];
+}
+
+const posts = await Astro.glob<Frontmatter>('./posts/*.md');
+
+const colors = [
+    "b-3 b-primary text-primary",
+    "b-3 b-secondary text-secondary",
+    "b-3 b-light-primary text-light-primary",
+];
 
 ---
 <Layout>
     <div class="w-100% flex justify-center p-8 box-border">
         <div class="flex items-start flex-col gap-32px">
-            <h1 class="inline m-0">Blog Posts</h1>
-            {posts.map(post => <Card>
-                <h2 class="m-0">{post.frontmatter.title}</h2>
-                <p>{post.frontmatter.description}</p>
-            </Card>)}
+            <h1>Blog Posts</h1>
+            {posts.map(post => (
+                <Card>
+                    <div class="flex flex-col gap-16px">
+                        <div class="flex gap-16px justify-start">
+                            <div class="flex-1 flex flex-col gap-8px">
+                                <h1>{post.frontmatter.title}</h1>
+                                <div class="flex gap-8px">
+                                    {(post.frontmatter.tags ?? []).map((tag, index) => (
+                                        <div class:list={[colors[index % colors.length], "inline-flex px-8px py-4px rounded-xl"]}>
+                                            <p>{tag}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <h1 class="gradient-p">#1</h1>
+                        </div>
+                        <p>{post.frontmatter.description}</p>
+                    </div>
+                </Card>
+            ))}
         </div>
     </div>
 </Layout>
