@@ -2,13 +2,14 @@ import { Component, For } from "solid-js";
 import createScrollPosition from "@solid-primitives/scroll";
 import { remToPx } from "../../utils";
 
-type ContentType = { astro: { headers: { slug: string; text: string }[] } };
+type ContentType = { astro: { headers: { slug: string; text: string; depth: number }[] } };
 
 // HACK Magic number
 const correctTop = (v: number) => v - 100;
 
 const Progress: Component = ({ content }: { content: ContentType }) => {
     const position = createScrollPosition();
+    console.log(content.astro.headers);
 
     const { scrollHeight, clientHeight } = document.documentElement;
     const scrollable = scrollHeight - clientHeight;
@@ -28,16 +29,17 @@ const Progress: Component = ({ content }: { content: ContentType }) => {
         const { top } = e?.getBoundingClientRect();
         // add the initial scroll position
         const progress = correctTop(top + position());
-        const relative = Math.max(Math.min(progress / scrollable, 1), 0);
+        const relative = Math.max(Math.min(progress / scrollHeight, 1), 0);
         return { relative, h };
     });
 
     return (
         <div class="p-8 relative">
-            <div class="h-75vh w-16px relative">
-                <div class="w-100% h-100% rounded-full bg-white overflow-hidden">
+            <div class="h-75vh w-16px relative flex flex-col items-center">
+                <div class="w-100% rounded-full bg-white overflow-hidden" style={{ height: `${(scrollable / scrollHeight) * 100}%` }}>
                     <div class="w-100% h-100% bg-primary rounded-full" style={{ transform: transform() }} />
                 </div>
+                <div class="flex-1 b-dotted b-0 b-l-4 b-white"></div>
                 <For each={tops}>
                     {({ relative, h }) => (
                         <div
@@ -51,7 +53,11 @@ const Progress: Component = ({ content }: { content: ContentType }) => {
                                     id={`${h.slug}-link-positioner`}
                                     class="absolute right-32px top-0px translate-y--50% min-w-200px text-end"
                                 >
-                                    <a href={`#${h.slug}`} textContent={h.text}></a>
+                                    <a
+                                        href={`#${h.slug}`}
+                                        classList={{ "font-400": true, "text-sm": h.depth > 1 }}
+                                        textContent={h.text}
+                                    ></a>
                                 </div>
                             </div>
                         </div>

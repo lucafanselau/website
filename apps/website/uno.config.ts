@@ -8,7 +8,9 @@ import transformerDirective from "@unocss/transformer-directives";
 export default defineConfig({
     theme: {
         colors: {
-            background: "#555B6E",
+            background: "#24272F",
+            lightBackground: "#3E4251",
+            grey: "#555B6E",
             primary: "#89B0AE",
             lightPrimary: "#BEE3DB",
             text: "#FAF9F9",

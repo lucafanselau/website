@@ -1,3 +1,18 @@
 ---
-import Layout from ""
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+const posts = await Astro.glob('./posts/*.md');
+
 ---
+<Layout>
+    <div class="w-100% flex justify-center p-8 box-border">
+        <div class="flex items-start flex-col gap-32px">
+            <h1 class="inline m-0">Blog Posts</h1>
+            {posts.map(post => <Card>
+                <h2 class="m-0">{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.description}</p>
+            </Card>)}
+        </div>
+    </div>
+</Layout>
