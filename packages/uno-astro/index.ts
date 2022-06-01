@@ -15,7 +15,7 @@ const uno = (...args: Parameters<typeof unoVite>): AstroIntegration => ({
             // and we also want to inject an import script here
             // NOTE: page ssr is used by the tailwind integration so i guess this is best practice, but the website
             // refers to this as "not commonly used", maybe "page" is the preferred option
-            injectScript("page-ssr", 'import "virtual:uno.css";\nimport "@unocss/reset/normalize.css";\n');
+            injectScript("page-ssr", 'import "virtual:uno.css";\nimport "@unocss/reset/tailwind.css";\n');
             injectScript("page", 'import "uno-astro/client.ts";');
         },
     },

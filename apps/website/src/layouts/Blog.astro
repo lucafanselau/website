@@ -4,8 +4,7 @@ import Progress from "./../components/solid/Progress.tsx";
 
 const { content } = Astro.props;
 ---
-<Layout>
-
+<Layout title={content.title}>
     <div class="flex items-start justify-center">
         <div class="fixed top-[calc(50%+40px)] left-[calc(50%-38ch)] translate--50%">
             <Progress client:only="solid-js" content={content} />
