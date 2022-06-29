@@ -1,7 +1,10 @@
 import { defineConfig } from "astro/config";
 import uno from "uno-astro";
 import solid from "@astrojs/solid-js";
-const unoIntegration = uno("uno.config.ts");
+
+import unoConfig from "./uno.config";
+const unoIntegration =
+    uno(); // unoConfig
 
 // https://astro.build/config
 export default defineConfig({
