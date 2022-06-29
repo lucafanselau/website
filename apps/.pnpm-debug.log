@@ -1,0 +1,1670 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/luca/dev/website"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {},
+    "prefix": "/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "/Users/luca/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/luca/dev/website/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/luca/dev/website",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/create-astro/0.12.4",
+    "wanted": {
+      "dependentId": "../../Library/pnpm/store/v3/tmp/dlx-46609",
+      "name": "create-astro",
+      "rawSpec": "latest"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/create-astro/0.12.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/yargs-parser/21.0.1",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "yargs-parser",
+      "rawSpec": "^21.0.1"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yargs-parser/21.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/execa/6.1.0",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "execa",
+      "rawSpec": "^6.1.0"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/execa/6.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prompts/2.4.2",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "prompts",
+      "rawSpec": "^2.4.2"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prompts/2.4.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/5.0.1",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "chalk",
+      "rawSpec": "^5.0.1"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/5.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yargs-parser/21.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "15 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/create-astro/0.12.4",
+    "size": 7151,
+    "status": "started"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ora/6.1.2",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "ora",
+      "rawSpec": "^6.1.0"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ora/6.1.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/kleur/4.1.5",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "kleur",
+      "rawSpec": "^4.1.4"
+    }
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/4.1.5",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/execa/6.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prompts/2.4.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "22 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/5.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/create-astro/0.12.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "fetched"
+  },
+  "24 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/kleur/4.1.5",
+    "size": 6153,
+    "status": "started"
+  },
+  "25 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ora/6.1.2",
+    "size": 7613,
+    "status": "started"
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/4.1.5",
+    "requester": "/Users/luca/dev/website",
+    "status": "fetched"
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ora/6.1.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "fetched"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/degit/2.8.4",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "degit",
+      "rawSpec": "^2.8.4"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/degit/2.8.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/degit/2.8.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/degit/2.8.3",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "@types/degit",
+      "rawSpec": "^2.8.3"
+    }
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/degit/2.8.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/degit/2.8.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/prompts/2.0.14",
+    "wanted": {
+      "dependentId": "/create-astro/0.12.4",
+      "name": "@types/prompts",
+      "rawSpec": "^2.0.14"
+    }
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/prompts/2.0.14",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "36 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/kleur/3.0.3",
+    "wanted": {
+      "dependentId": "/prompts/2.4.2",
+      "name": "kleur",
+      "rawSpec": "^3.0.3"
+    }
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/5.0.1",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "chalk",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/3.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/prompts/2.0.14",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/3.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "41 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sisteransi/1.0.5",
+    "wanted": {
+      "dependentId": "/prompts/2.4.2",
+      "name": "sisteransi",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sisteransi/1.0.5",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "43 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-final-newline/3.0.0",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "strip-final-newline",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-final-newline/3.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "45 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/merge-stream/2.0.0",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "merge-stream",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-stream/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "47 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/onetime/6.0.0",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "onetime",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/6.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "49 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/human-signals/3.0.1",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "human-signals",
+      "rawSpec": "^3.0.1"
+    }
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/human-signals/3.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "51 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-stream/6.0.1",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "get-stream",
+      "rawSpec": "^6.0.1"
+    }
+  },
+  "52 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-stream/6.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "53 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-stream/3.0.0",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "is-stream",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-stream/3.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sisteransi/1.0.5",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-stream/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-final-newline/3.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/6.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/human-signals/3.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-stream/6.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-stream/3.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "62 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/signal-exit/3.0.7",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "signal-exit",
+      "rawSpec": "^3.0.7"
+    }
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/signal-exit/3.0.7",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "64 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/7.0.3",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "cross-spawn",
+      "rawSpec": "^7.0.3"
+    }
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "66 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-path/5.1.0",
+    "wanted": {
+      "dependentId": "/execa/6.1.0",
+      "name": "npm-run-path",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-path/5.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/signal-exit/3.0.7",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-path/5.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "71 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-ansi/7.0.1",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "strip-ansi",
+      "rawSpec": "^7.0.1"
+    }
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-ansi/7.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-ansi/7.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "74 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/wcwidth/1.0.1",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "wcwidth",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wcwidth/1.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "76 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wcwidth/1.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "77 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-spinners/2.6.1",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "cli-spinners",
+      "rawSpec": "^2.6.1"
+    }
+  },
+  "78 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-spinners/2.6.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-spinners/2.6.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "80 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bl/5.0.0",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "bl",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bl/5.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "82 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bl/5.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "83 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mimic-fn/4.0.0",
+    "wanted": {
+      "dependentId": "/onetime/6.0.0",
+      "name": "mimic-fn",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mimic-fn/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "85 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mimic-fn/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "86 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-command/2.0.0",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "shebang-command",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "88 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-cursor/4.0.0",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "cli-cursor",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "89 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-cursor/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "91 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-cursor/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "92 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-unicode-supported/1.2.0",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "is-unicode-supported",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-unicode-supported/1.2.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "94 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-interactive/2.0.0",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "is-interactive",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "95 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-interactive/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "96 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/log-symbols/5.1.0",
+    "wanted": {
+      "dependentId": "/ora/6.1.2",
+      "name": "log-symbols",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "97 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-symbols/5.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "98 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/5.0.1",
+    "wanted": {
+      "dependentId": "/log-symbols/5.1.0",
+      "name": "chalk",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "99 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-unicode-supported/1.2.0",
+    "wanted": {
+      "dependentId": "/log-symbols/5.1.0",
+      "name": "is-unicode-supported",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "100 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which/2.0.2",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "which",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-unicode-supported/1.2.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "103 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-interactive/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "104 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-symbols/5.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "106 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-key/3.1.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "path-key",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "107 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-key/4.0.0",
+    "wanted": {
+      "dependentId": "/npm-run-path/5.1.0",
+      "name": "path-key",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "108 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "110 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "111 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "112 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/restore-cursor/4.0.0",
+    "wanted": {
+      "dependentId": "/cli-cursor/4.0.0",
+      "name": "restore-cursor",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "113 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/restore-cursor/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "114 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/onetime/5.1.2",
+    "wanted": {
+      "dependentId": "/restore-cursor/4.0.0",
+      "name": "onetime",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "115 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/signal-exit/3.0.7",
+    "wanted": {
+      "dependentId": "/restore-cursor/4.0.0",
+      "name": "signal-exit",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "116 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/5.1.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "117 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mimic-fn/2.1.0",
+    "wanted": {
+      "dependentId": "/onetime/5.1.2",
+      "name": "mimic-fn",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mimic-fn/2.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "119 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/defaults/1.0.3",
+    "wanted": {
+      "dependentId": "/wcwidth/1.0.1",
+      "name": "defaults",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "120 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/defaults/1.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "121 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/5.1.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mimic-fn/2.1.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "123 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/defaults/1.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "124 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/restore-cursor/4.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "125 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/readable-stream/3.6.0",
+    "wanted": {
+      "dependentId": "/bl/5.0.0",
+      "name": "readable-stream",
+      "rawSpec": "^3.4.0"
+    }
+  },
+  "126 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/readable-stream/3.6.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "127 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inherits/2.0.4",
+    "wanted": {
+      "dependentId": "/bl/5.0.0",
+      "name": "inherits",
+      "rawSpec": "^2.0.4"
+    }
+  },
+  "128 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "129 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/readable-stream/3.6.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "130 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "131 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/buffer/6.0.3",
+    "wanted": {
+      "dependentId": "/bl/5.0.0",
+      "name": "buffer",
+      "rawSpec": "^6.0.3"
+    }
+  },
+  "132 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/buffer/6.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "133 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inherits/2.0.4",
+    "wanted": {
+      "dependentId": "/readable-stream/3.6.0",
+      "name": "inherits",
+      "rawSpec": "^2.0.3"
+    }
+  },
+  "134 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-regex/6.0.1",
+    "wanted": {
+      "dependentId": "/strip-ansi/7.0.1",
+      "name": "ansi-regex",
+      "rawSpec": "^6.0.1"
+    }
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-regex/6.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "136 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/buffer/6.0.3",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "137 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-regex/6.0.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "138 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-regex/3.0.0",
+    "wanted": {
+      "dependentId": "/shebang-command/2.0.0",
+      "name": "shebang-regex",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "139 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-regex/3.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "140 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-regex/3.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "141 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/isexe/2.0.0",
+    "wanted": {
+      "dependentId": "/which/2.0.2",
+      "name": "isexe",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "142 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "144 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/clone/1.0.4",
+    "wanted": {
+      "dependentId": "/defaults/1.0.3",
+      "name": "clone",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "145 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/clone/1.0.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "146 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/clone/1.0.4",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "147 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/base64-js/1.5.1",
+    "wanted": {
+      "dependentId": "/buffer/6.0.3",
+      "name": "base64-js",
+      "rawSpec": "^1.3.1"
+    }
+  },
+  "148 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/base64-js/1.5.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "149 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/base64-js/1.5.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "150 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ieee754/1.2.1",
+    "wanted": {
+      "dependentId": "/buffer/6.0.3",
+      "name": "ieee754",
+      "rawSpec": "^1.2.1"
+    }
+  },
+  "151 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ieee754/1.2.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "152 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/util-deprecate/1.0.2",
+    "wanted": {
+      "dependentId": "/readable-stream/3.6.0",
+      "name": "util-deprecate",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "153 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/util-deprecate/1.0.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "154 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string_decoder/1.3.0",
+    "wanted": {
+      "dependentId": "/readable-stream/3.6.0",
+      "name": "string_decoder",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "155 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string_decoder/1.3.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "156 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ieee754/1.2.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "157 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/util-deprecate/1.0.2",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "158 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string_decoder/1.3.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "159 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/safe-buffer/5.2.1",
+    "wanted": {
+      "dependentId": "/string_decoder/1.3.0",
+      "name": "safe-buffer",
+      "rawSpec": "~5.2.0"
+    }
+  },
+  "160 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/safe-buffer/5.2.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "161 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/safe-buffer/5.2.1",
+    "requester": "/Users/luca/dev/website",
+    "status": "found_in_store"
+  },
+  "162 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/18.0.0",
+    "wanted": {
+      "dependentId": "/@types/prompts/2.0.14",
+      "name": "@types/node",
+      "rawSpec": "*"
+    }
+  },
+  "163 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/18.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "resolved"
+  },
+  "164 debug pnpm:package-manifest": {
+    "prefix": "/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609",
+    "updated": {
+      "dependencies": {
+        "create-astro": "^0.12.4"
+      }
+    }
+  },
+  "165 debug pnpm:package-manifest": {
+    "prefix": "/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609",
+    "updated": {
+      "dependencies": {
+        "create-astro": "^0.12.4"
+      }
+    }
+  },
+  "166 debug pnpm:stage": {
+    "prefix": "/Users/luca/dev/website",
+    "stage": "resolution_done"
+  },
+  "167 debug pnpm:stats": {
+    "prefix": "/Users/luca/dev/website",
+    "removed": 138
+  },
+  "168 debug pnpm:removal": "/Users/luca/dev/website/node_modules/@babel/code-frame",
+  "169 debug pnpm:removal": "/Users/luca/dev/website/node_modules/@babel/helper-validator-identifier",
+  "170 debug pnpm:removal": "/Users/luca/dev/website/node_modules/@babel/highlight",
+  "171 debug pnpm:removal": "/Users/luca/dev/website/node_modules/@types/minimist",
+  "172 debug pnpm:removal": "/Users/luca/dev/website/node_modules/@types/normalize-package-data",
+  "173 debug pnpm:removal": "/Users/luca/dev/website/node_modules/@types/tinycolor2",
+  "174 debug pnpm:removal": "/Users/luca/dev/website/node_modules/ansi-escapes",
+  "175 debug pnpm:removal": "/Users/luca/dev/website/node_modules/ansi-regex",
+  "176 debug pnpm:removal": "/Users/luca/dev/website/node_modules/ansi-styles",
+  "177 debug pnpm:removal": "/Users/luca/dev/website/node_modules/arrify",
+  "178 debug pnpm:removal": "/Users/luca/dev/website/node_modules/balanced-match",
+  "179 debug pnpm:removal": "/Users/luca/dev/website/node_modules/bl",
+  "180 debug pnpm:removal": "/Users/luca/dev/website/node_modules/brace-expansion",
+  "181 debug pnpm:removal": "/Users/luca/dev/website/node_modules/buffer",
+  "182 debug pnpm:removal": "/Users/luca/dev/website/node_modules/camelcase-keys",
+  "183 debug pnpm:removal": "/Users/luca/dev/website/node_modules/camelcase",
+  "184 debug pnpm:removal": "/Users/luca/dev/website/node_modules/chalk",
+  "185 debug pnpm:removal": "/Users/luca/dev/website/node_modules/chardet",
+  "186 debug pnpm:removal": "/Users/luca/dev/website/node_modules/cli-cursor",
+  "187 debug pnpm:removal": "/Users/luca/dev/website/node_modules/cli-width",
+  "188 debug pnpm:removal": "/Users/luca/dev/website/node_modules/color-convert",
+  "189 debug pnpm:removal": "/Users/luca/dev/website/node_modules/color-name",
+  "190 debug pnpm:removal": "/Users/luca/dev/website/node_modules/concat-map",
+  "191 debug pnpm:removal": "/Users/luca/dev/website/node_modules/create-turbo",
+  "192 debug pnpm:removal": "/Users/luca/dev/website/node_modules/decamelize-keys",
+  "193 debug pnpm:removal": "/Users/luca/dev/website/node_modules/decamelize",
+  "194 debug pnpm:removal": "/Users/luca/dev/website/node_modules/deep-extend",
+  "195 debug pnpm:removal": "/Users/luca/dev/website/node_modules/emoji-regex",
+  "196 debug pnpm:removal": "/Users/luca/dev/website/node_modules/error-ex",
+  "197 debug pnpm:removal": "/Users/luca/dev/website/node_modules/escape-string-regexp",
+  "198 debug pnpm:removal": "/Users/luca/dev/website/node_modules/execa",
+  "199 debug pnpm:removal": "/Users/luca/dev/website/node_modules/external-editor",
+  "200 debug pnpm:removal": "/Users/luca/dev/website/node_modules/figures",
+  "201 debug pnpm:removal": "/Users/luca/dev/website/node_modules/find-up",
+  "202 debug pnpm:removal": "/Users/luca/dev/website/node_modules/fs-extra",
+  "203 debug pnpm:removal": "/Users/luca/dev/website/node_modules/fs.realpath",
+  "204 debug pnpm:removal": "/Users/luca/dev/website/node_modules/function-bind",
+  "205 debug pnpm:removal": "/Users/luca/dev/website/node_modules/glob",
+  "206 debug pnpm:removal": "/Users/luca/dev/website/node_modules/graceful-fs",
+  "207 debug pnpm:removal": "/Users/luca/dev/website/node_modules/gradient-string",
+  "208 debug pnpm:removal": "/Users/luca/dev/website/node_modules/hard-rejection",
+  "209 debug pnpm:removal": "/Users/luca/dev/website/node_modules/has-flag",
+  "210 debug pnpm:removal": "/Users/luca/dev/website/node_modules/has",
+  "211 debug pnpm:removal": "/Users/luca/dev/website/node_modules/hosted-git-info",
+  "212 debug pnpm:removal": "/Users/luca/dev/website/node_modules/human-signals",
+  "213 debug pnpm:removal": "/Users/luca/dev/website/node_modules/iconv-lite",
+  "214 debug pnpm:removal": "/Users/luca/dev/website/node_modules/indent-string",
+  "215 debug pnpm:removal": "/Users/luca/dev/website/node_modules/inflight",
+  "216 debug pnpm:removal": "/Users/luca/dev/website/node_modules/ini",
+  "217 debug pnpm:removal": "/Users/luca/dev/website/node_modules/inquirer",
+  "218 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-arrayish",
+  "219 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-core-module",
+  "220 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-fullwidth-code-point",
+  "221 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-interactive",
+  "222 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-plain-obj",
+  "223 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-stream",
+  "224 debug pnpm:removal": "/Users/luca/dev/website/node_modules/is-unicode-supported",
+  "225 debug pnpm:removal": "/Users/luca/dev/website/node_modules/js-tokens",
+  "226 debug pnpm:removal": "/Users/luca/dev/website/node_modules/json-parse-even-better-errors",
+  "227 debug pnpm:removal": "/Users/luca/dev/website/node_modules/jsonfile",
+  "228 debug pnpm:removal": "/Users/luca/dev/website/node_modules/kind-of",
+  "229 debug pnpm:removal": "/Users/luca/dev/website/node_modules/lines-and-columns",
+  "230 debug pnpm:removal": "/Users/luca/dev/website/node_modules/locate-path",
+  "231 debug pnpm:removal": "/Users/luca/dev/website/node_modules/lodash",
+  "232 debug pnpm:removal": "/Users/luca/dev/website/node_modules/log-symbols",
+  "233 debug pnpm:removal": "/Users/luca/dev/website/node_modules/lru-cache",
+  "234 debug pnpm:removal": "/Users/luca/dev/website/node_modules/map-obj",
+  "235 debug pnpm:removal": "/Users/luca/dev/website/node_modules/meow",
+  "236 debug pnpm:removal": "/Users/luca/dev/website/node_modules/min-indent",
+  "237 debug pnpm:removal": "/Users/luca/dev/website/node_modules/minimatch",
+  "238 debug pnpm:removal": "/Users/luca/dev/website/node_modules/minimist-options",
+  "239 debug pnpm:removal": "/Users/luca/dev/website/node_modules/minimist",
+  "240 debug pnpm:removal": "/Users/luca/dev/website/node_modules/mute-stream",
+  "241 debug pnpm:removal": "/Users/luca/dev/website/node_modules/normalize-package-data",
+  "242 debug pnpm:removal": "/Users/luca/dev/website/node_modules/npm-run-path",
+  "243 debug pnpm:removal": "/Users/luca/dev/website/node_modules/once",
+  "244 debug pnpm:removal": "/Users/luca/dev/website/node_modules/ora",
+  "245 debug pnpm:removal": "/Users/luca/dev/website/node_modules/os-tmpdir",
+  "246 debug pnpm:removal": "/Users/luca/dev/website/node_modules/p-limit",
+  "247 debug pnpm:removal": "/Users/luca/dev/website/node_modules/p-locate",
+  "248 debug pnpm:removal": "/Users/luca/dev/website/node_modules/p-try",
+  "249 debug pnpm:removal": "/Users/luca/dev/website/node_modules/parse-json",
+  "250 debug pnpm:removal": "/Users/luca/dev/website/node_modules/path-exists",
+  "251 debug pnpm:removal": "/Users/luca/dev/website/node_modules/path-is-absolute",
+  "252 debug pnpm:removal": "/Users/luca/dev/website/node_modules/path-parse",
+  "253 debug pnpm:removal": "/Users/luca/dev/website/node_modules/quick-lru",
+  "254 debug pnpm:removal": "/Users/luca/dev/website/node_modules/rc",
+  "255 debug pnpm:removal": "/Users/luca/dev/website/node_modules/read-pkg-up",
+  "256 debug pnpm:removal": "/Users/luca/dev/website/node_modules/read-pkg",
+  "257 debug pnpm:removal": "/Users/luca/dev/website/node_modules/redent",
+  "258 debug pnpm:removal": "/Users/luca/dev/website/node_modules/registry-auth-token",
+  "259 debug pnpm:removal": "/Users/luca/dev/website/node_modules/registry-url",
+  "260 debug pnpm:removal": "/Users/luca/dev/website/node_modules/resolve",
+  "261 debug pnpm:removal": "/Users/luca/dev/website/node_modules/restore-cursor",
+  "262 debug pnpm:removal": "/Users/luca/dev/website/node_modules/rimraf",
+  "263 debug pnpm:removal": "/Users/luca/dev/website/node_modules/run-async",
+  "264 debug pnpm:removal": "/Users/luca/dev/website/node_modules/rxjs",
+  "265 debug pnpm:removal": "/Users/luca/dev/website/node_modules/safer-buffer",
+  "266 debug pnpm:removal": "/Users/luca/dev/website/node_modules/semver",
+  "267 debug pnpm:removal": "/Users/luca/dev/website/node_modules/spdx-correct",
+  "268 debug pnpm:removal": "/Users/luca/dev/website/node_modules/spdx-exceptions",
+  "269 debug pnpm:removal": "/Users/luca/dev/website/node_modules/spdx-expression-parse",
+  "270 debug pnpm:removal": "/Users/luca/dev/website/node_modules/spdx-license-ids",
+  "271 debug pnpm:removal": "/Users/luca/dev/website/node_modules/string-width",
+  "272 debug pnpm:removal": "/Users/luca/dev/website/node_modules/strip-ansi",
+  "273 debug pnpm:removal": "/Users/luca/dev/website/node_modules/strip-final-newline",
+  "274 debug pnpm:removal": "/Users/luca/dev/website/node_modules/strip-indent",
+  "275 debug pnpm:removal": "/Users/luca/dev/website/node_modules/strip-json-comments",
+  "276 debug pnpm:removal": "/Users/luca/dev/website/node_modules/supports-color",
+  "277 debug pnpm:removal": "/Users/luca/dev/website/node_modules/supports-preserve-symlinks-flag",
+  "278 debug pnpm:removal": "/Users/luca/dev/website/node_modules/through",
+  "279 debug pnpm:removal": "/Users/luca/dev/website/node_modules/tinycolor2",
+  "280 debug pnpm:removal": "/Users/luca/dev/website/node_modules/tinygradient",
+  "281 debug pnpm:removal": "/Users/luca/dev/website/node_modules/tmp",
+  "282 debug pnpm:removal": "/Users/luca/dev/website/node_modules/trim-newlines",
+  "283 debug pnpm:removal": "/Users/luca/dev/website/node_modules/tslib",
+  "284 debug pnpm:removal": "/Users/luca/dev/website/node_modules/type-fest",
+  "285 debug pnpm:removal": "/Users/luca/dev/website/node_modules/universalify",
+  "286 debug pnpm:removal": "/Users/luca/dev/website/node_modules/update-check",
+  "287 debug pnpm:removal": "/Users/luca/dev/website/node_modules/validate-npm-package-license",
+  "288 debug pnpm:removal": "/Users/luca/dev/website/node_modules/wrap-ansi",
+  "289 debug pnpm:removal": "/Users/luca/dev/website/node_modules/wrappy",
+  "290 debug pnpm:removal": "/Users/luca/dev/website/node_modules/yallist",
+  "291 debug pnpm:removal": "/Users/luca/dev/website/node_modules/yargs-parser",
+  "292 debug pnpm:removal": "/Users/luca/dev/website/node_modules/.bin/create-turbo",
+  "293 debug pnpm:removal": "/Users/luca/dev/website/node_modules/.bin/rc",
+  "294 debug pnpm:removal": "/Users/luca/dev/website/node_modules/.bin/resolve",
+  "295 debug pnpm:removal": "/Users/luca/dev/website/node_modules/.bin/rimraf",
+  "296 debug pnpm:removal": "/Users/luca/dev/website/node_modules/.bin/semver",
+  "297 debug pnpm:stage": {
+    "prefix": "/Users/luca/dev/website",
+    "stage": "importing_started"
+  },
+  "298 debug pnpm:stats": {
+    "added": 51,
+    "prefix": "/Users/luca/dev/website"
+  },
+  "299 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/@types+degit@2.8.3/node_modules/@types/degit",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/@types/degit"
+  },
+  "300 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/@types+prompts@2.0.14/node_modules/@types/prompts",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/@types/prompts"
+  },
+  "301 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/chalk@5.0.1/node_modules/chalk",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/chalk"
+  },
+  "302 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/degit@2.8.4/node_modules/degit",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/degit"
+  },
+  "303 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/execa",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/execa"
+  },
+  "304 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/kleur@4.1.5/node_modules/kleur",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/kleur"
+  },
+  "305 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/ora",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/ora"
+  },
+  "306 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/prompts@2.4.2/node_modules/prompts",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/prompts"
+  },
+  "307 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/yargs-parser@21.0.1/node_modules/yargs-parser",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/yargs-parser"
+  },
+  "308 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/@types+node@18.0.0/node_modules/@types/node",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/@types+prompts@2.0.14/node_modules/@types/node"
+  },
+  "309 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/cross-spawn@7.0.3/node_modules/cross-spawn",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/cross-spawn"
+  },
+  "310 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/get-stream@6.0.1/node_modules/get-stream",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/get-stream"
+  },
+  "311 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/human-signals@3.0.1/node_modules/human-signals",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/human-signals"
+  },
+  "312 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-stream@3.0.0/node_modules/is-stream",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/is-stream"
+  },
+  "313 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/merge-stream@2.0.0/node_modules/merge-stream",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/merge-stream"
+  },
+  "314 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/npm-run-path@5.1.0/node_modules/npm-run-path",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/npm-run-path"
+  },
+  "315 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/onetime@6.0.0/node_modules/onetime",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/onetime"
+  },
+  "316 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/signal-exit"
+  },
+  "317 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/strip-final-newline@3.0.0/node_modules/strip-final-newline",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/strip-final-newline"
+  },
+  "318 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/path-key@3.1.1/node_modules/path-key",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/cross-spawn@7.0.3/node_modules/path-key"
+  },
+  "319 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/shebang-command@2.0.0/node_modules/shebang-command",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/cross-spawn@7.0.3/node_modules/shebang-command"
+  },
+  "320 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/which@2.0.2/node_modules/which",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/cross-spawn@7.0.3/node_modules/which"
+  },
+  "321 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/shebang-regex@3.0.0/node_modules/shebang-regex",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/shebang-command@2.0.0/node_modules/shebang-regex"
+  },
+  "322 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/isexe@2.0.0/node_modules/isexe",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/which@2.0.2/node_modules/isexe"
+  },
+  "323 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/path-key@4.0.0/node_modules/path-key",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/npm-run-path@5.1.0/node_modules/path-key"
+  },
+  "324 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/mimic-fn@4.0.0/node_modules/mimic-fn",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/onetime@6.0.0/node_modules/mimic-fn"
+  },
+  "325 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/bl@5.0.0/node_modules/bl",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/bl"
+  },
+  "326 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/chalk@5.0.1/node_modules/chalk",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/chalk"
+  },
+  "327 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/cli-cursor@4.0.0/node_modules/cli-cursor",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/cli-cursor"
+  },
+  "328 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/cli-spinners@2.6.1/node_modules/cli-spinners",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/cli-spinners"
+  },
+  "329 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-interactive@2.0.0/node_modules/is-interactive",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/is-interactive"
+  },
+  "330 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-unicode-supported@1.2.0/node_modules/is-unicode-supported",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/is-unicode-supported"
+  },
+  "331 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/log-symbols@5.1.0/node_modules/log-symbols",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/log-symbols"
+  },
+  "332 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/strip-ansi@7.0.1/node_modules/strip-ansi",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/strip-ansi"
+  },
+  "333 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/wcwidth@1.0.1/node_modules/wcwidth",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/wcwidth"
+  },
+  "334 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/buffer@6.0.3/node_modules/buffer",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/bl@5.0.0/node_modules/buffer"
+  },
+  "335 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/inherits@2.0.4/node_modules/inherits",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/bl@5.0.0/node_modules/inherits"
+  },
+  "336 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/readable-stream@3.6.0/node_modules/readable-stream",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/bl@5.0.0/node_modules/readable-stream"
+  },
+  "337 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/base64-js@1.5.1/node_modules/base64-js",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/buffer@6.0.3/node_modules/base64-js"
+  },
+  "338 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/ieee754@1.2.1/node_modules/ieee754",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/buffer@6.0.3/node_modules/ieee754"
+  },
+  "339 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/inherits@2.0.4/node_modules/inherits",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/readable-stream@3.6.0/node_modules/inherits"
+  },
+  "340 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/string_decoder@1.3.0/node_modules/string_decoder",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/readable-stream@3.6.0/node_modules/string_decoder"
+  },
+  "341 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/util-deprecate@1.0.2/node_modules/util-deprecate",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/readable-stream@3.6.0/node_modules/util-deprecate"
+  },
+  "342 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/safe-buffer@5.2.1/node_modules/safe-buffer",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/string_decoder@1.3.0/node_modules/safe-buffer"
+  },
+  "343 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/restore-cursor@4.0.0/node_modules/restore-cursor",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/cli-cursor@4.0.0/node_modules/restore-cursor"
+  },
+  "344 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/onetime@5.1.2/node_modules/onetime",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/restore-cursor@4.0.0/node_modules/onetime"
+  },
+  "345 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/restore-cursor@4.0.0/node_modules/signal-exit"
+  },
+  "346 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/mimic-fn@2.1.0/node_modules/mimic-fn",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/onetime@5.1.2/node_modules/mimic-fn"
+  },
+  "347 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/chalk@5.0.1/node_modules/chalk",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/log-symbols@5.1.0/node_modules/chalk"
+  },
+  "348 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-unicode-supported@1.2.0/node_modules/is-unicode-supported",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/log-symbols@5.1.0/node_modules/is-unicode-supported"
+  },
+  "349 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/ansi-regex@6.0.1/node_modules/ansi-regex",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/strip-ansi@7.0.1/node_modules/ansi-regex"
+  },
+  "350 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/defaults@1.0.3/node_modules/defaults",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/wcwidth@1.0.1/node_modules/defaults"
+  },
+  "351 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/clone@1.0.4/node_modules/clone",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/defaults@1.0.3/node_modules/clone"
+  },
+  "352 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/kleur@3.0.3/node_modules/kleur",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/prompts@2.4.2/node_modules/kleur"
+  },
+  "353 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/sisteransi@1.0.5/node_modules/sisteransi",
+    "link": "/Users/luca/dev/website/node_modules/.pnpm/prompts@2.4.2/node_modules/sisteransi"
+  },
+  "354 debug pnpm:package-import-method": {
+    "method": "hardlink"
+  },
+  "355 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/@types+degit@2.8.3/node_modules/@types/degit"
+  },
+  "356 debug pnpm:package-import-method": {
+    "method": "hardlink"
+  },
+  "357 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/ora"
+  },
+  "358 debug pnpm:package-import-method": {
+    "method": "hardlink"
+  },
+  "359 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/kleur@4.1.5/node_modules/kleur"
+  },
+  "360 debug pnpm:package-import-method": {
+    "method": "hardlink"
+  },
+  "361 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/@types+prompts@2.0.14/node_modules/@types/prompts"
+  },
+  "362 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@types/node/18.0.0",
+    "size": 314265,
+    "status": "started"
+  },
+  "363 debug pnpm:package-import-method": {
+    "method": "hardlink"
+  },
+  "364 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/degit@2.8.4/node_modules/degit"
+  },
+  "365 debug pnpm:package-import-method": {
+    "method": "hardlink"
+  },
+  "366 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/create-astro"
+  },
+  "367 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/18.0.0",
+    "requester": "/Users/luca/dev/website",
+    "status": "fetched"
+  },
+  "368 debug pnpm:progress": {
+    "method": "hardlink",
+    "requester": "/Users/luca/dev/website",
+    "status": "imported",
+    "to": "/Users/luca/dev/website/node_modules/.pnpm/@types+node@18.0.0/node_modules/@types/node"
+  },
+  "369 debug pnpm:stage": {
+    "prefix": "/Users/luca/dev/website",
+    "stage": "importing_done"
+  },
+  "370 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/create-astro",
+    "link": "/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609/node_modules/create-astro"
+  },
+  "371 debug pnpm:root": {
+    "added": {
+      "dependencyType": "prod",
+      "id": "registry.npmjs.org/create-astro/0.12.4",
+      "name": "create-astro",
+      "realName": "create-astro",
+      "version": "0.12.4"
+    },
+    "prefix": "/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609"
+  },
+  "372 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/create-astro@0.12.4/node_modules/create-astro",
+    "link": "/Users/luca/dev/website/node_modules/create-astro"
+  },
+  "373 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/@types+degit@2.8.3/node_modules/@types/degit",
+    "link": "/Users/luca/dev/website/node_modules/@types/degit"
+  },
+  "374 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/@types+prompts@2.0.14/node_modules/@types/prompts",
+    "link": "/Users/luca/dev/website/node_modules/@types/prompts"
+  },
+  "375 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/chalk@5.0.1/node_modules/chalk",
+    "link": "/Users/luca/dev/website/node_modules/chalk"
+  },
+  "376 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/degit@2.8.4/node_modules/degit",
+    "link": "/Users/luca/dev/website/node_modules/degit"
+  },
+  "377 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/execa@6.1.0/node_modules/execa",
+    "link": "/Users/luca/dev/website/node_modules/execa"
+  },
+  "378 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/kleur@4.1.5/node_modules/kleur",
+    "link": "/Users/luca/dev/website/node_modules/kleur"
+  },
+  "379 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/ora@6.1.2/node_modules/ora",
+    "link": "/Users/luca/dev/website/node_modules/ora"
+  },
+  "380 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/prompts@2.4.2/node_modules/prompts",
+    "link": "/Users/luca/dev/website/node_modules/prompts"
+  },
+  "381 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/yargs-parser@21.0.1/node_modules/yargs-parser",
+    "link": "/Users/luca/dev/website/node_modules/yargs-parser"
+  },
+  "382 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/@types+node@18.0.0/node_modules/@types/node",
+    "link": "/Users/luca/dev/website/node_modules/@types/node"
+  },
+  "383 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/cross-spawn@7.0.3/node_modules/cross-spawn",
+    "link": "/Users/luca/dev/website/node_modules/cross-spawn"
+  },
+  "384 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/get-stream@6.0.1/node_modules/get-stream",
+    "link": "/Users/luca/dev/website/node_modules/get-stream"
+  },
+  "385 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/human-signals@3.0.1/node_modules/human-signals",
+    "link": "/Users/luca/dev/website/node_modules/human-signals"
+  },
+  "386 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-stream@3.0.0/node_modules/is-stream",
+    "link": "/Users/luca/dev/website/node_modules/is-stream"
+  },
+  "387 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/merge-stream@2.0.0/node_modules/merge-stream",
+    "link": "/Users/luca/dev/website/node_modules/merge-stream"
+  },
+  "388 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/npm-run-path@5.1.0/node_modules/npm-run-path",
+    "link": "/Users/luca/dev/website/node_modules/npm-run-path"
+  },
+  "389 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/onetime@6.0.0/node_modules/onetime",
+    "link": "/Users/luca/dev/website/node_modules/onetime"
+  },
+  "390 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit",
+    "link": "/Users/luca/dev/website/node_modules/signal-exit"
+  },
+  "391 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/strip-final-newline@3.0.0/node_modules/strip-final-newline",
+    "link": "/Users/luca/dev/website/node_modules/strip-final-newline"
+  },
+  "392 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/bl@5.0.0/node_modules/bl",
+    "link": "/Users/luca/dev/website/node_modules/bl"
+  },
+  "393 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/cli-cursor@4.0.0/node_modules/cli-cursor",
+    "link": "/Users/luca/dev/website/node_modules/cli-cursor"
+  },
+  "394 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/cli-spinners@2.6.1/node_modules/cli-spinners",
+    "link": "/Users/luca/dev/website/node_modules/cli-spinners"
+  },
+  "395 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-interactive@2.0.0/node_modules/is-interactive",
+    "link": "/Users/luca/dev/website/node_modules/is-interactive"
+  },
+  "396 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/is-unicode-supported@1.2.0/node_modules/is-unicode-supported",
+    "link": "/Users/luca/dev/website/node_modules/is-unicode-supported"
+  },
+  "397 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/log-symbols@5.1.0/node_modules/log-symbols",
+    "link": "/Users/luca/dev/website/node_modules/log-symbols"
+  },
+  "398 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/strip-ansi@7.0.1/node_modules/strip-ansi",
+    "link": "/Users/luca/dev/website/node_modules/strip-ansi"
+  },
+  "399 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/wcwidth@1.0.1/node_modules/wcwidth",
+    "link": "/Users/luca/dev/website/node_modules/wcwidth"
+  },
+  "400 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/sisteransi@1.0.5/node_modules/sisteransi",
+    "link": "/Users/luca/dev/website/node_modules/sisteransi"
+  },
+  "401 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/buffer@6.0.3/node_modules/buffer",
+    "link": "/Users/luca/dev/website/node_modules/buffer"
+  },
+  "402 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/inherits@2.0.4/node_modules/inherits",
+    "link": "/Users/luca/dev/website/node_modules/inherits"
+  },
+  "403 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/readable-stream@3.6.0/node_modules/readable-stream",
+    "link": "/Users/luca/dev/website/node_modules/readable-stream"
+  },
+  "404 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/restore-cursor@4.0.0/node_modules/restore-cursor",
+    "link": "/Users/luca/dev/website/node_modules/restore-cursor"
+  },
+  "405 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/path-key@3.1.1/node_modules/path-key",
+    "link": "/Users/luca/dev/website/node_modules/path-key"
+  },
+  "406 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/shebang-command@2.0.0/node_modules/shebang-command",
+    "link": "/Users/luca/dev/website/node_modules/shebang-command"
+  },
+  "407 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/which@2.0.2/node_modules/which",
+    "link": "/Users/luca/dev/website/node_modules/which"
+  },
+  "408 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/mimic-fn@4.0.0/node_modules/mimic-fn",
+    "link": "/Users/luca/dev/website/node_modules/mimic-fn"
+  },
+  "409 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/ansi-regex@6.0.1/node_modules/ansi-regex",
+    "link": "/Users/luca/dev/website/node_modules/ansi-regex"
+  },
+  "410 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/defaults@1.0.3/node_modules/defaults",
+    "link": "/Users/luca/dev/website/node_modules/defaults"
+  },
+  "411 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/base64-js@1.5.1/node_modules/base64-js",
+    "link": "/Users/luca/dev/website/node_modules/base64-js"
+  },
+  "412 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/ieee754@1.2.1/node_modules/ieee754",
+    "link": "/Users/luca/dev/website/node_modules/ieee754"
+  },
+  "413 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/clone@1.0.4/node_modules/clone",
+    "link": "/Users/luca/dev/website/node_modules/clone"
+  },
+  "414 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/string_decoder@1.3.0/node_modules/string_decoder",
+    "link": "/Users/luca/dev/website/node_modules/string_decoder"
+  },
+  "415 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/util-deprecate@1.0.2/node_modules/util-deprecate",
+    "link": "/Users/luca/dev/website/node_modules/util-deprecate"
+  },
+  "416 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/shebang-regex@3.0.0/node_modules/shebang-regex",
+    "link": "/Users/luca/dev/website/node_modules/shebang-regex"
+  },
+  "417 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/isexe@2.0.0/node_modules/isexe",
+    "link": "/Users/luca/dev/website/node_modules/isexe"
+  },
+  "418 debug pnpm:link": {
+    "target": "/Users/luca/dev/website/node_modules/.pnpm/safe-buffer@5.2.1/node_modules/safe-buffer",
+    "link": "/Users/luca/dev/website/node_modules/safe-buffer"
+  },
+  "419 debug pnpm:lockfile": {
+    "message": "`pnpm-lock.yaml` differs from `node_modules/.pnpm/lock.yaml`",
+    "prefix": "/Users/luca/dev/website"
+  },
+  "420 debug pnpm:summary": {
+    "prefix": "/Users/luca/dev/website"
+  },
+  "421 error pnpm": {
+    "shortMessage": "Command failed with exit code 1: /Users/luca/Library/pnpm/store/v3/tmp/dlx-46609/node_modules/.bin/create-astro",
+    "command": "/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609/node_modules/.bin/create-astro",
+    "escapedCommand": "\"/Users/luca/Library/pnpm/store/v3/tmp/dlx-46609/node_modules/.bin/create-astro\"",
+    "exitCode": 1,
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "err": {
+      "name": "pnpm",
+      "message": "Command failed with exit code 1: /Users/luca/Library/pnpm/store/v3/tmp/dlx-46609/node_modules/.bin/create-astro",
+      "stack": "pnpm: Command failed with exit code 1: /Users/luca/Library/pnpm/store/v3/tmp/dlx-46609/node_modules/.bin/create-astro\n    at makeError (/Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:42587:17)\n    at handlePromise (/Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:43158:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Object.handler (/Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:171445:7)\n    at async /Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:176441:21\n    at async run (/Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:176415:34)\n    at async runPnpm (/Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:176633:5)\n    at async /Users/luca/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:176625:7"
+    }
+  }
+}
