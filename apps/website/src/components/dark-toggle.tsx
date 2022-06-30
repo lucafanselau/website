@@ -7,8 +7,8 @@ type ThemeType = "dark" | "light";
 const THEME_DARK: ThemeType = "dark";
 const THEME_LIGHT: ThemeType = "light";
 
-const width = 72;
-const widthClass = "w-[72px]";
+const width = 54;
+const widthClass = "w-[54px]";
 
 export const DarkToggle: Component = () => {
     const [theme, setTheme] = createSignal<ThemeType>("dark");
@@ -39,25 +39,25 @@ export const DarkToggle: Component = () => {
     return (
         <button
             onClick={toggleTheme}
-            class={"rounded-full border-4 border-dark dark:border-kinda-white relative " + widthClass + " h-[39px]"}
+            class={"rounded-full box-content border-2 border-dark dark:border-kinda-white relative " + widthClass + " h-[28px]"}
         >
             <Motion.img
                 src={sun}
-                class="absolute left-1 top-[6px] w-[20px] h-[20px]"
+                class="absolute left-[6px] top-[6px] w-[16px] h-[16px]"
                 animate={{ opacity: theme() === "light" ? 1 : 0 }}
                 initial={false}
             />
             <Motion.img
                 src={moon}
-                class="absolute right-1 top-[6px] w-[20px] h-[20px]"
+                class="absolute right-[6px] top-[6px] w-[16px] h-[16px]"
                 animate={{ opacity: theme() === "dark" ? 1 : 0 }}
                 initial={false}
             />
             <Motion.svg
                 class="absolute top-[4px] text-dark dark:text-kinda-white"
-                animate={{ rotate: theme() === "dark" ? "90deg" : "0deg", x: theme() === "dark" ? 5 : width - 4 - 24 - 8 }}
-                width="24"
-                height="24"
+                animate={{ rotate: theme() === "dark" ? "90deg" : "0deg", x: theme() === "dark" ? 4 : width - 4 - 20 }}
+                width="20"
+                height="20"
                 viewBox="0 0 33 33"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
