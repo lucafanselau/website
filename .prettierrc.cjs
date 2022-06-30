@@ -3,6 +3,6 @@ module.exports = {
   arrowParens: "avoid",
   useTabs: false,
   printWidth: 140,
-  tabWidth: 4,
-  plugins: [require.resolve('prettier-plugin-astro')],
+  tabWidth: 4
+  // plugins: [require.resolve('prettier-plugin-astro')],
 };

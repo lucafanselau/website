@@ -1,15 +1,26 @@
 ---
 import { Icon } from "astro-icon"
+import { DarkToggle } from "./dark-toggle.jsx"
 ---
-<div class="px-8 py-4">
-  <div class="flex gap-2 items-center">
+
+<div class="flex px-8 py-2">
+  <div class="flex-1 flex gap-2 items-center">
     <Icon name={"logo"} />
     <p class="font-bold text-3xl">guythat.codes</p>
+  </div>
+  <div class="flex-0 flex gap-4 items-center">
+    <a class="underline text-lg font-bold">Home</a>
+    <a class="text-lg font-bold">About Me</a>
+    <a class="text-lg font-bold">Blog</a>
+  </div>
+  <div class="flex-1 flex gap-2 items-center justify-end">
+    <DarkToggle client:only="solid" />
+  </div>
 </div>
-</div>
+<div class="h-[2px] w-full bg-dark" />
 
 <style>
   [astro-icon="logo"] {
-    width: 48px;
+    width: 42px;
   }
 </style>
