@@ -1,6 +1,6 @@
 ---
 title: Trying the Astro Framework to sandbox a portfolio / blog website
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/Blog.astro
 description: Building a new thing always creates an opportunity for testing new technologies. Follow me as we look into Astro a new SSG framework for snappy websites with a twist.
 tags: ["Astro", "Frontend", "Blog"]
 ---
