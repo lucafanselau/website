@@ -12,6 +12,12 @@ use web_sys::EventTarget;
 
 use std::sync::mpsc::{channel, Receiver};
 
+#[derive(Debug, PartialEq, Eq)]
+pub enum ControlFlow {
+    Break,
+    Continue,
+}
+
 pub struct InputManager {
     receiver: Receiver<InputEvent>,
     _keyboard: Vec<KeyboardCallback>,
@@ -80,10 +86,18 @@ impl InputManager {
         self.receiver.try_iter()
     }
 
-    pub fn update(&self, state: &mut InputState, listeners: &mut [&mut dyn EventListener]) {
+    pub fn update(
+        &self,
+        state: &mut InputState,
+        listeners: &mut [&mut dyn EventListener],
+    ) -> ControlFlow {
         for event in self.poll() {
             match event {
                 InputEvent::KeyDown(key) => {
+                    match key {
+                        Key::Escape => return ControlFlow::Break,
+                        _ => {}
+                    }
                     state.keys.insert(key, true);
                 }
                 InputEvent::KeyUp(key) => {
@@ -95,5 +109,6 @@ impl InputManager {
                 listener.handle(event);
             }
         }
+        return ControlFlow::Continue;
     }
 }

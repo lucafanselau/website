@@ -1,4 +1,5 @@
 use super::utils;
+use crate::input::ControlFlow;
 use crate::input::InputManager;
 use crate::input::InputState;
 use crate::render::camera::Camera;
@@ -93,12 +94,15 @@ impl Game {
         }
     }
 
-    pub fn update(&mut self, dt: f32, total: f32) {
+    pub fn update(&mut self, dt: f32, total: f32) -> bool {
         // Update the input
-        self.input.update(
+        if self.input.update(
             &mut self.input_state,
             &mut [&mut self.camera, &mut self.world],
-        );
+        ) == ControlFlow::Break
+        {
+            return true;
+        }
 
         // log!("Got dt: {}", dt);
         self.camera.update(dt, &self.input_state);
@@ -108,6 +112,7 @@ impl Game {
         self.light_dir = (glam::Mat3::from_axis_angle(axis, total / 10.0) * glam::Vec3::X
             + glam::vec3(0.0, 1.0, 0.0))
         .normalize();
+        return false;
     }
 
     pub fn render(&mut self) {
