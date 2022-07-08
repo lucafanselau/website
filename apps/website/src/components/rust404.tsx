@@ -3,16 +3,16 @@ import init, { Game } from "rust-404";
 import { DocumentEventListener, DocumentEventProps } from "@solid-primitives/event-listener";
 
 export const Rust404: Component = () => {
-    let canvas: HTMLCanvasElement;
-    let p: HTMLParagraphElement;
-    let game: Game;
+    let canvas: HTMLCanvasElement | undefined;
+    let p: HTMLParagraphElement | undefined;
+    let game: Game | undefined;
     let startup: number;
     let running = false;
 
     const renderLoop = (last: number) => {
         const now = window.performance.now();
-        game.update((now - last) / 1000.0, now / 1000.0);
-        game.render();
+        game?.update((now - last) / 1000.0, now / 1000.0);
+        game?.render();
         if (running) requestAnimationFrame(() => renderLoop(now));
     };
     const onClick: JSX.DOMAttributes<HTMLCanvasElement>["onClick"] = async event => {
@@ -28,7 +28,7 @@ export const Rust404: Component = () => {
         // NOTE: there is an issue with pointer lock in chrome (or others (not tested))
         // https://discourse.threejs.org/t/how-to-avoid-pointerlockcontrols-error/33017
         if (!running) {
-            canvas.requestPointerLock();
+            canvas?.requestPointerLock();
         }
     };
 
@@ -36,13 +36,15 @@ export const Rust404: Component = () => {
         if (document.pointerLockElement === canvas) {
             // that should be the action that we dispatched ourselves
             running = true;
-            p.style.visibility = "hidden";
+            if (p !== undefined) p.style.visibility = "hidden";
             // kickstart the render loop
             renderLoop(startup);
         } else {
             running = false;
-            p.style.visibility = "inherit";
-            p.textContent = "Click to continue the game";
+            if (p !== undefined) {
+                p.style.visibility = "inherit";
+                p.textContent = "Click to continue the game";
+            }
         }
     };
 

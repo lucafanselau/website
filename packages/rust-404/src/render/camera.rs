@@ -32,7 +32,7 @@ impl Camera {
 
     pub fn new() -> Self {
         let mut c = Camera {
-            pos: glam::vec3(8.0, -1.0, 8.0),
+            pos: glam::vec3(8.0, 16.0, 8.0),
             dir: glam::vec3(0.0, 0.0, -1.0),
             yaw: 0.0,
             pitch: 0.0,
