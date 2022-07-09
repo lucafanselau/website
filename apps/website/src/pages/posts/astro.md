@@ -21,6 +21,10 @@ But than again the page that you are reading right know, is mostly static and we
 
 In case you didn't click the link in the previous paragraph in pure excitement and you stayed with me, lets look at was astro has to over. Astro falls into the category of static site generators, but they addressed the issue that you typically encounter with SSG, that you always have at least some amount of dynamic content on the web page. This is were typically developers would typically use a framework, such as react, svelte, vue, etc., which makes writing client side logic extremely easy. But those frameworks impose a client side overhead when loading your webpage, either rendering or hydrating the page, which for generally highly static data, like blog or documentation pages, seems unnecessary. The approach that astro chose to this problem is writing most of your pages in a static, jsx-like, templating language, that has the added benefit that you can import and use a component of any framework. Lets look at a simple `index.astro` page, you might encounter: (ps. to bootstrap a project have a look [here](https://docs.astro.build/en/getting-started/))
 
-```typescript
-
+```astro
+---
+import { Component } from "../component";
+---
+<div>
+</div>
 ```
