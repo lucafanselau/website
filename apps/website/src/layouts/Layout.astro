@@ -19,7 +19,7 @@ const { title, path } = Astro.props as Props;
   <body >
     <main class="bg-light-green dark:bg-darker text-dark dark:text-kinda-white w-full min-h-screen flex flex-col">
       <Header path={path} />
-      <div class="container mx-auto py-4 flex-1 h-full flex flex-col">
+      <div class="container mx-auto py-4 flex-1 h-full flex flex-col p-1">
         <slot />
       </div>
     </main>
