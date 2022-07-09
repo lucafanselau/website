@@ -8,10 +8,10 @@ const { path } = Astro.props;
   <div class="flex px-2 lg:px-8 py-2 items-stretch">
   <div class="flex-1 flex gap-2 items-center">
     <Icon name={"logo"} />
-    <a href={"/home"} class="font-bold text-3xl text-center">guythat.codes</a>
+    <a href={"/"} class="font-bold text-3xl text-center">guythat.codes</a>
   </div>
   <div class="flex-0 flex gap-4 items-center">
-    <a href={"/home"} class=`${path === "/home" ? "underline" : ""} text-lg font-bold text-center`>Home</a>
+    <a href={"/"} class=`${path === "/" ? "underline" : ""} text-lg font-bold text-center`>Home</a>
     <a href={"/about"} class=`${path === "/about" ? "underline" : ""} text-lg font-bold text-center`>About Me</a>
     <a href={"/blog"} class=`${path === "/blog" ? "underline" : ""} text-lg font-bold text-center`>Blog</a>
   </div>
