@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-
 import solid from "@astrojs/solid-js";
+
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,5 +11,5 @@ export default defineConfig({
       external: ["svgo"]
     }
   },
-  integrations: [tailwind(), solid()]
+  integrations: [tailwind(), react(), solid()]
 });

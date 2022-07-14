@@ -1,3 +1,5 @@
+/** @jsxImportSource solid-js */
+
 import { Component, createSignal, JSX, onMount } from "solid-js";
 import init, { Game } from "rust-404";
 import { DocumentEventListener, DocumentEventProps } from "@solid-primitives/event-listener";

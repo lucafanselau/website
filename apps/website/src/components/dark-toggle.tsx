@@ -1,7 +1,8 @@
-import { Component, createSignal, onMount, Show } from "solid-js";
-/* import { Motion } from "@motionone/solid"; */
-import sunSource from "../icons/sun.svg";
+/** @jsxImportSource solid-js */
+
+import { Component, Show } from "solid-js";
 import moonSource from "../icons/moon.svg";
+import sunSource from "../icons/sun.svg";
 
 type ThemeType = "dark" | "light";
 const THEME_DARK: ThemeType = "dark";

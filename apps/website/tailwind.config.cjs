@@ -26,11 +26,13 @@ module.exports = {
 				grey: "#555B6E",
 				green: "#89B0AE",
 				"light-green": "#BEE3DB",
+				"lighter-green": "#D4EDE7",
 				"kinda-white": "#FAF9F9",
 				yellow: "#FFD6BA",
 			},
 			fontFamily: {
-				"sans": ["Roboto Flex"], //, ...defaultTheme.fontFamily.sans]
+				"sans": ["Inter", "Roboto Flex"], //, ...defaultTheme.fontFamily.sans]
+				"mono": ["Fira Mono"]
 			},
 			typography: ({ theme }) => ({
 				raisin: {
