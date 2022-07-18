@@ -6,6 +6,7 @@ module.exports = {
 	darkMode: "class",
 	theme: {
 		spacing: {
+			'0': '0px',
 			'1': '8px',
 			'2': '12px',
 			'3': '16px',
@@ -29,6 +30,8 @@ module.exports = {
 				"lighter-green": "#D4EDE7",
 				"kinda-white": "#FAF9F9",
 				yellow: "#FFD6BA",
+				pink: "#F4BBD3",
+				"dodger-blue": "#0496FF"
 			},
 			fontFamily: {
 				"sans": ["Inter", "Roboto Flex"], //, ...defaultTheme.fontFamily.sans]
