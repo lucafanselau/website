@@ -5,7 +5,9 @@ import Layout from "./Layout.astro";
 const { content } = Astro.props;
 ---
 <Layout title={content.title}>
+      <div class="container isolate relative mx-auto py-4 flex-1 h-full flex flex-col p-1">
     <article class="prose prose-raisin dark:prose-invert mx-auto lg:prose-xl">
         <slot />
     </article>
+          </div>
 </Layout>

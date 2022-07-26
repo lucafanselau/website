@@ -1,10 +1,10 @@
 /** @jsxImportSource react */
 
-import { ContactShadows, Environment, Float, Lightformer, Stats } from "@react-three/drei";
+import { ContactShadows, Environment, Float, Lightformer, Scroll, ScrollControls, Stats } from "@react-three/drei";
 import { Canvas, extend, useFrame } from "@react-three/fiber";
 import { Color, Depth, LayerMaterial } from "lamina";
 import { useControls } from "leva";
-import { FC, useMemo, useRef, useState } from "react";
+import { FC, ReactNode, useMemo, useRef, useState } from "react";
 import { BackSide, Group, Mesh } from "three";
 import { PlanetGeometry } from "./planet";
 extend({ PlanetGeometry });
@@ -56,16 +56,24 @@ const Planet: FC = props => {
     );
 };
 
-const World: FC = () => {
+const World: FC<{ children?: ReactNode }> = ({ children }) => {
     return (
         <Canvas>
-            <Planet />
-            <spotLight position={[0, 15, 0]} angle={0.3} penumbra={1} castShadow intensity={1} shadow-bias={-0.0001} />
-            <ambientLight intensity={0.1} />
-            {/* <ContactShadows resolution={1024} frames={1} position={[0, -1.16, 0]} scale={10} blur={3} opacity={1} far={10} /> */}
-            {/* Renders contents "live" into a HDRI environment (scene.environment). */}
-            <Environment preset={"city"} />
-            <Stats />
+            <ScrollControls pages={3}>
+                <Planet />
+                <spotLight position={[0, 15, 0]} angle={0.3} penumbra={1} castShadow intensity={1} shadow-bias={-0.0001} />
+                <ambientLight intensity={0.1} />
+                <Scroll html>
+                    {children}
+                    <h1>html in here (optional)</h1>
+                    <h1 style={{ position: "absolute", top: "100vh" }}>second page</h1>
+                    <h1 style={{ position: "absolute", top: "200vh" }}>third page</h1>
+                </Scroll>
+                {/* <ContactShadows resolution={1024} frames={1} position={[0, -1.16, 0]} scale={10} blur={3} opacity={1} far={10} /> */}
+                {/* Renders contents "live" into a HDRI environment (scene.environment). */}
+                <Environment preset={"city"} />
+                <Stats />
+            </ScrollControls>
         </Canvas>
     );
 };
