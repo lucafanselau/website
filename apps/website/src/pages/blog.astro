@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
 
 
 type Frontmatter = {
@@ -16,7 +17,9 @@ const colors = [
     "border-[3px] border-light-green text-light-green",
 ];
 ---
-<Layout path="/blog" title="Blog | guythat.codes">
+<Layout  title="Blog | guythat.codes">
+      <Header path="/blog" />
+
       <div class="container relative mx-auto py-4 flex-1 h-full flex flex-col p-1">
 	<div class="flex flex-col gap-4 items-center md:items-start pt-8">
 		<h1 class="font-bold text-5xl">Blog Posts</h1>

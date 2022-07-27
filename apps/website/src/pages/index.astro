@@ -1,9 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { World } from '../components/world';
+
+import Header from "../components/Header.astro";
 ---
 <Layout path={"/"} title="Blog | guythat.codes">
-	<div class="flex flex-col isolate relative">
+
+	<div class="h-screen flex flex-col isolate ">
+      <Header path={"/"}  />
+	<div class="flex-1  relative">
 		<World client:idle>
 			</World>
 		{/* <div> */}
@@ -18,5 +23,6 @@ import { World } from '../components/world';
 		{/* 	</div> */}
 		{/* </div> */}
 	</div>
+		</div>
 </Layout>
 
