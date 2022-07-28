@@ -1,6 +1,6 @@
 /** @jsxImportSource react */
 
-import { Environment, Html, Scroll, ScrollControls, Stats, useScroll } from "@react-three/drei";
+import { Environment, Html, Loader, Scroll, ScrollControls, Stats, useScroll } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useControls } from "leva";
 import { FC, ReactNode, useMemo, useRef, useState } from "react";
@@ -77,6 +77,8 @@ const Content: FC = () => {
     const size = useThree(s => s.size);
     const domElement = useThree(s => s.gl.domElement);
 
+    return null;
+
     return createPortal(
         <div className="absolute top-0 left-0 w-full h-full">
             <h1 className="">Start scrolling...</h1>
@@ -88,6 +90,7 @@ const World: FC<{ children?: ReactNode }> = ({ children }) => {
     return (
         <Canvas>
             <ScrollControls pages={3}>
+                <Loader />
                 <Planet />
                 <Content />
                 <spotLight position={[5, 15, 7]} angle={0.3} penumbra={1} castShadow intensity={0.5} shadow-bias={-0.0001} />
