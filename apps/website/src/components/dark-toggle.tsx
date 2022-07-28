@@ -95,12 +95,12 @@ export const DarkToggle: Component = () => {
         handle: undefined as SVGSVGElement | undefined,
     };
     const toggleTheme = () => {
-        window.document.body.classList.toggle(THEME_DARK);
+        window.document.documentElement.classList.toggle(THEME_DARK);
         const old = fromStorage();
         const toggled = old === THEME_DARK ? THEME_LIGHT : THEME_DARK;
         // Update Storage
         localStorage.setItem("theme", toggled);
-        // Update Store
+        // Animation
         names.forEach(name => {
             const e = el[name];
             const s = state[name];
