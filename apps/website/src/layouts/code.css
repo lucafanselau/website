@@ -1,6 +1,9 @@
 pre > code {
     display: grid;
 }
+
+/* Dark / Light Theme */
+
 .dark pre[data-theme="light"] {
     display: none;
 }
@@ -9,4 +12,22 @@ pre[data-theme="dark"] {
 }
 .dark pre[data-theme="dark"] {
     display: block;
+}
+
+/* Line numbers */
+
+code[data-line-numbers] {
+    counter-reset: line;
+}
+
+code[data-line-numbers] > .line::before {
+    counter-increment: line;
+    content: counter(line);
+
+    /* Other styling */
+    display: inline-block;
+    width: 1rem;
+    margin-right: 2rem;
+    text-align: right;
+    color: gray;
 }

@@ -7,9 +7,9 @@ import rehypePrettyCode from "rehype-pretty-code";
 import react from "@astrojs/react";
 
 // const OneLight = loadTheme("./assets/OneLight.json");
-const OneLight = JSON.parse(
-  fs.readFileSync(path.join(process.cwd(), "./assets/OneLight.json"), 'utf-8'),
-)
+// const OneLight = JSON.parse(
+//   fs.readFileSync(path.join(process.cwd(), "./assets/OneLight.json"), 'utf-8'),
+// )
 
 /** @type {import('rehype-pretty-code').Options} */
 const codeOptions = {
@@ -24,7 +24,7 @@ const codeOptions = {
 export default defineConfig({
   vite: {
     ssr: {
-      external: ["svgo"]
+      // external: ["svgo"]
     }
   },
   markdown: {

@@ -21,10 +21,6 @@ But than again the page that you are reading right know, is mostly static and we
 
 In case you didn't click the link in the previous paragraph in pure excitement and you stayed with me, lets look at was astro has to over. Astro falls into the category of static site generators, but they addressed the issue that you typically encounter with SSG, that you always have at least some amount of dynamic content on the web page. This is were typically developers would typically use a framework, such as react, svelte, vue, etc., which makes writing client side logic extremely easy. But those frameworks impose a client side overhead when loading your webpage, either rendering or hydrating the page, which for generally highly static data, like blog or documentation pages, seems unnecessary. The approach that astro chose to this problem is writing most of your pages in a static, jsx-like, templating language, that has the added benefit that you can import and use a component of any framework. Lets look at a simple `index.astro` page, you might encounter: (ps. to bootstrap a project have a look [here](https://docs.astro.build/en/getting-started/)). Please also note that this is not aimed to be a full on tutorial on how to get started in astro, since that is already covered to a great extend by the website.
 
-```js
-const a = 0;
-```
-
 ```astro
 ---
 // Hey this is normal js/ts code
@@ -54,10 +50,14 @@ The first thing that becomes apparent is that every page needs to return a compl
 
 ## Astro components
 
-Rewriting the same complete html document every time is not very feasible though, we can therefore use [Components](https://docs.astro.build/en/core-concepts/astro-components/) to abstract that once and reload in every page. They have the same layout as the pages and can also execute arbitrary javascript at build time. You would probably typically use that to have reusable parts of your project defined once and not many times. An example of that can be found in the
+Rewriting the same complete html document every time is not very feasible though, we can therefore use [Components](https://docs.astro.build/en/core-concepts/astro-components/) to abstract that once and reload in every page. They have the same layout as the pages and can also execute arbitrary javascript at build time. You would probably typically use that to have reusable parts of your project defined once and not many times. An example of that can be found in the source code of this website, which can be found [here](https://github.com/lucafanselau/website).
 
 ## Integrations
 
-## Notes
+But now we get to the really interesting stuff that astro has to offer. The *Integrations*🎉. These can range from simple ones like adding [tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/) to the project or adding SSR adapters. Although SSR is currently no requirement for my project I won't cover those in detail here, but you can certainly hit me up if that interests you. Basically Integrations are just an easy method of hooking in the the _vite_ powered build system that astro uses behind the scenes. The real star of the show though are the UI Framework Integrations. There is an integration for basically every UI framework you could want. I will write another blog posts covering one use case that I had for the Dark/Light Mode Switch, so check that out if that is of interest to you.
 
-Please note however that astro is still a WIP library. Actually as I wrote this article I got a random runtime error from the astro compiler. Therefore I would not recommend using this framework for mission critical code. On the flip side however, when **not** using the SSR integration, astro builds into static html and can thus not cause runtime issues on the client side.
+## Conclusion and thoughts
+
+Generally I was quite pleased with the DX that astro had to offer. And of course the 99 Performance score that I get with Lighthouse on this exact page is extremely promising. Mixing multiple UI Frameworks is an extremely nice feature and generally for something like a portfolio website I would strongly consider astro. Please note however that astro is still a WIP library. Actually as I wrote this article I got a random runtime error from the astro compiler. Therefore I would not recommend using this framework for mission critical code. On the flip side however, when **not** using the SSR integration, astro builds into static html and can thus not cause runtime issues on the client side.
+
+In the following few blog articles I will cover the more advanced stuff that you can do with the Island model and different UI Frameworks. If I remeber I will add those here, if you are reading this though I probably forgot though 😅.
