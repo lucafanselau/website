@@ -16,7 +16,7 @@ pub struct Camera {
 
 impl Camera {
     const SPEED: f32 = 7.568;
-    const MOUSE_SENSITIVITY: f32 = 0.687;
+    const MOUSE_SENSITIVITY: f32 = 0.432;
 
     pub fn move_dir(&self, key: &Key) -> glam::Vec3 {
         match key {

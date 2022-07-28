@@ -1,43 +1,48 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import {Rust404} from "../components/rust404.tsx";
+import Layout from "../layouts/Layout.astro";
+import { Rust404 } from "../components/rust404.tsx";
 import Header from "../components/Header.astro";
-
 
 const instructions = {
     W: "Move forward",
     A: "Move left",
     S: "Move backward",
     D: "Move right",
+    Q: "Previous item",
+    E: "Next item",
     Shift: "Move down",
     Space: "Move up",
-    Q: "Previous item",
-    E: "Next item"
-}
+    "Left 🖱": "Destroy target",
+    "Right 🖱": "Build selected",
+    Escape: "Exit the game"
+};
 
-const kbd = "inline-flex items-center justify-center border-[1px] border-dark bg-darker rounded-md px-[0.5rem] min-h-[2.2em] text-kinda-white"
-
+const kbd =
+    "inline-flex items-center justify-center border-[1px] border-dark bg-darker rounded-md px-[0.5rem] min-h-[2.2em] text-kinda-white";
 ---
+
 <Layout title="Uuuups">
-      <Header />
-    <div class={'flex-1 flex flex-col gap-8 items-center h-full justify-center'}>
+    <Header />
+    <div class={"flex-1 flex flex-col gap-8 items-center h-full justify-center xl:mt-8 mt-4"}>
         <div class="flex flex-col gap-2">
-            <h1 class="font-bold text-5xl">404 Page Not Found</h1>
-            <p class="">This page could not be found. You can however enjoy urself playing a little</p>
+            <h1 class="font-bold text-5xl text-center">404 Page Not Found</h1>
+            <p class="text-center">This page could not be found. You can however enjoy urself playing a little</p>
         </div>
         <Rust404 client:only="solid" />
-
-            <div class={"grid grid-cols-10 gap-x-2 gap-y-2 p-4 items-center bg-yellow " +
-
+        <div
+            class={"grid gap-x-4 lg:gap-x-8 gap-y-2 p-4 items-center bg-yellow " +
                 "border-[3px] border-darker dark:border-kinda-white relative " +
                 "shadow-solid shadow-darker/25 dark:shadow-kinda-white/25 " +
-                "inline-block rounded-2xl dark:from-yellow dark:to-dark from-green to-yellow bg-gradient-to-l overflow-hidden"
-
-                       }>
-                <h3 class="col-span-10 text-4xl mb-2">Instructions:</h3>
-                {Object.entries(instructions).map(([key, value]) => (
+                   "inline-block rounded-2xl dark:bg-green bg-yellow overflow-hidden"}
+        >
+            <h3 class="col-span-10 text-4xl mb-2">Instructions:</h3>
+            {Object.entries(instructions).map(([key, value]) => (
+                <>
                     <div class={kbd}>{key}</div>
                     <p class="col-span-4 text-center">{value}</p>
-                ))}
+                </>
+            ))}
+        </div>
+            <p>Note: Due to the missing pointer-lock api on mobile devices, this is currently only playable in desktop browsers</p>
     </div>
 </Layout>

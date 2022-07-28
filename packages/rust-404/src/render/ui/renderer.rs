@@ -1,3 +1,5 @@
+use std::ops::{Add, Sub};
+
 use anyhow::anyhow;
 use bytemuck::{Pod, Zeroable};
 use glow::{Buffer, HasContext, Program, Texture, VertexArray};
@@ -20,8 +22,19 @@ pub enum UiMaterial {
 }
 
 impl UiMaterial {
+    const fn from_triplet(r: u8, g: u8, b: u8) -> Self {
+        UiMaterial::Solid(glam::const_vec4!([
+            r as f32 / 255.0,
+            g as f32 / 255.0,
+            b as f32 / 255.0,
+            1.0
+        ]))
+    }
+
     pub const WHITE: Self = UiMaterial::Solid(glam::const_vec4!([1.0; 4]));
     pub const BLACK: Self = UiMaterial::Solid(glam::const_vec4!([0.0, 0.0, 0.0, 1.0]));
+    pub const DARKER: Self = Self::from_triplet(36, 39, 47);
+    pub const DARK: Self = Self::from_triplet(62, 66, 81);
 }
 
 #[derive(Debug, Clone)]
@@ -43,6 +56,11 @@ impl UiRect {
             tl: glam::uvec2(x, y).as_vec2(),
             extend: glam::uvec2(width, height).as_vec2(),
         }
+    }
+    /// Construct a new UiRect by insetting by value
+    pub fn inset(self: &Self, v: u32) -> Self {
+        let values = glam::vec2(v as f32, v as f32);
+        Self::new(self.tl.add(values), self.extend.sub(2.0 * values))
     }
 }
 

@@ -55,11 +55,15 @@ export const Rust404: Component = () => {
             class={
                 "border-[3px] border-darker dark:border-kinda-white relative " +
                 "shadow-solid shadow-darker/25 dark:shadow-kinda-white/25 " +
-                "inline-block rounded-2xl dark:from-yellow dark:to-dark from-green to-yellow bg-gradient-to-l overflow-hidden"
+                "inline-block rounded-2xl dark:from-yellow dark:to-green from-green to-yellow bg-gradient-to-l overflow-hidden " +
+                "max-w-[600px] w-full"
             }
         >
             <canvas ref={canvas} id={"canvas"} width={600} height={400} onClick={onClick} />
-            <p ref={p} class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <p
+                ref={p}
+                class="absolute pointer-events-none top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-2 bg-yellow rounded-xl dark:bg-darker border-[2px] border-darker dark:border-kinda-white"
+            >
                 Click to start the game
             </p>
             <DocumentEventListener onPointerlockchange={lockChange} />
