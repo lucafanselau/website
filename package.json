@@ -17,5 +17,5 @@
         "prettier": "^2.5.1",
         "turbo": "latest",
         "typescript": ">=3.0.0"
-    },
+    }
 }
