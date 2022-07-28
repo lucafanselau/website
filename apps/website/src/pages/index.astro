@@ -1,27 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { World } from '../components/world';
+import Layout from "../layouts/Layout.astro";
+import { World } from "../components/world";
 
 import Header from "../components/Header.astro";
 ---
-<Layout path={"/"} title="Blog | guythat.codes">
 
-	<div class="h-screen flex flex-col isolate ">
-      <Header path={"/"}  />
-	<div class="flex-1  relative">
-		<World client:idle>
-			</World>
-		{/* <div> */}
-		{/* 	<div class="h-[400px]" /> */}
-		{/* 	<h1 class="font-bold text-5xl mt-8 text-center">Hi <span class="text-yellow">there</span>,<br/>I am Luca</h1> */}
-		{/* 	<div class="h-[400px]" /> */}
-		{/* 	<div class="relative"> */}
-		{/* 		<div class="absolute top-0 left-0 w-full h-full bg-yellow dark:bg-light-green blend mix-blend-difference isolate -z-10" /> */}
-		{/* 		<div class="h-[400px]" /> */}
-		{/* 		<h1 class="font-bold text-5xl mt-8">Blog Posts</h1> */}
-		{/* 		<div class="h-[400px]" /> */}
-		{/* 	</div> */}
-		{/* </div> */}
-	</div>
-		</div>
+<Layout path={"/"} title="Blog | guythat.codes">
+    <div class="h-screen flex flex-col isolate ">
+        <Header path={"/"} />
+        <div class="flex-1  relative">
+            <World client:idle />
+            {/* <div> */}
+            {/* 	<div class="h-[400px]" /> */}
+            {/* 	<h1 class="font-bold text-5xl mt-8 text-center">Hi <span class="text-yellow">there</span>,<br/>I am Luca</h1> */}
+            {/* 	<div class="h-[400px]" /> */}
+            {/* 	<div class="relative"> */}
+            {/* 		<div class="absolute top-0 left-0 w-full h-full bg-yellow dark:bg-light-green blend mix-blend-difference isolate -z-10" /> */}
+            {/* 		<div class="h-[400px]" /> */}
+            {/* 		<h1 class="font-bold text-5xl mt-8">Blog Posts</h1> */}
+            {/* 		<div class="h-[400px]" /> */}
+            {/* 	</div> */}
+            {/* </div> */}
+        </div>
+    </div>
 </Layout>

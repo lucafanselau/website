@@ -3,6 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import {Rust404} from "../components/rust404.tsx";
 import Header from "../components/Header.astro";
 
+
+const instructions = {
+    W: "Move forward",
+    A: "Move left",
+    S: "Move backward",
+    D: "Move right",
+    Shift: "Move down",
+    Space: "Move up",
+    Q: "Previous item",
+    E: "Next item"
+}
+
+const kbd = "inline-flex items-center justify-center border-[1px] border-dark bg-darker rounded-md px-[0.5rem] min-h-[2.2em] text-kinda-white"
+
 ---
 <Layout title="Uuuups">
       <Header />
@@ -12,7 +26,18 @@ import Header from "../components/Header.astro";
             <p class="">This page could not be found. You can however enjoy urself playing a little</p>
         </div>
         <Rust404 client:only="solid" />
+
+            <div class={"grid grid-cols-10 gap-x-2 gap-y-2 p-4 items-center bg-yellow " +
+
+                "border-[3px] border-darker dark:border-kinda-white relative " +
+                "shadow-solid shadow-darker/25 dark:shadow-kinda-white/25 " +
+                "inline-block rounded-2xl dark:from-yellow dark:to-dark from-green to-yellow bg-gradient-to-l overflow-hidden"
+
+                       }>
+                <h3 class="col-span-10 text-4xl mb-2">Instructions:</h3>
+                {Object.entries(instructions).map(([key, value]) => (
+                    <div class={kbd}>{key}</div>
+                    <p class="col-span-4 text-center">{value}</p>
+                ))}
     </div>
-
-
 </Layout>

@@ -11,11 +11,13 @@
     "scripts": {
         "dev": "pnpm run --filter @luca.fanselau/website dev",
         "build": "turbo run build",
-        "format": "prettier --write '**/*.{ts,tsx,md,sol}'"
+        "format": "prettier -w --plugin-search-dir=. '**/*.{ts,tsx,astro,md}'"
     },
     "devDependencies": {
         "prettier": "^2.5.1",
         "turbo": "latest",
-        "typescript": ">=3.0.0"
-    }
+        "typescript": ">=3.0.0",
+        "prettier-plugin-astro": "^0.1.2"
+    },
+    "dependencies": {}
 }

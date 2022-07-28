@@ -30,19 +30,20 @@ const response = await fetch("https://random-data-api.com/api/color/random_color
 const body = await response.json();
 const color = body.hex_value;
 ---
+
 <html>
-  <head>
-    <title>My Homepage</title>
-  </head>
-  <body>
-    <h1>Welcome to my website! Current color is {color}</h1>
-  </body>
+    <head>
+        <title>My Homepage</title>
+    </head>
+    <body>
+        <h1>Welcome to my website! Current color is {color}</h1>
+    </body>
 </html>
 
 <style define:vars={{ color }}>
-  body {
-    background: var(--color)
-  }
+    body {
+        background: var(--color);
+    }
 </style>
 ```
 

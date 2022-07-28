@@ -1,15 +1,13 @@
 {
-        "compilerOptions": {
-                "target": "ESNext",
-                "module": "ESNext",
-                "jsx": "preserve",
-                "strict": true,
-                "moduleResolution": "node",
-                "resolveJsonModule": true,
-                "isolatedModules": true,
-                "types": [
-                        "vite/client"
-                ],
-                "allowSyntheticDefaultImports": true
-        }
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "jsx": "preserve",
+        "strict": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "types": ["vite/client"],
+        "allowSyntheticDefaultImports": true
+    }
 }
