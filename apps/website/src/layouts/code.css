@@ -1,0 +1,12 @@
+pre > code {
+    display: grid;
+}
+.dark pre[data-theme="light"] {
+    display: none;
+}
+pre[data-theme="dark"] {
+    display: none;
+}
+.dark pre[data-theme="dark"] {
+    display: block;
+}

@@ -83,11 +83,12 @@ class PlanetPolyhedronGeometry extends BufferGeometry {
         this.setAttribute("normal", new Float32BufferAttribute(vertexBuffer.slice(), 3));
         this.setAttribute("uv", new Float32BufferAttribute(uvBuffer, 2));
 
-        if (detail === 0) {
-            this.computeVertexNormals(); // flat normals
-        } else {
-            this.normalizeNormals(); // smooth normals
-        }
+        // if (detail === 0) {
+        //     this.computeVertexNormals(); // flat normals
+        // } else {
+        //     this.normalizeNormals(); // smooth normals
+        // }
+        this.computeVertexNormals(); // flat normals
 
         // helper functions
 

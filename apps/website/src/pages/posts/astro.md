@@ -9,7 +9,7 @@ tags: ["Astro", "Frontend", "Blog"]
 
 ## Here we go again
 
-Nowadays many ideas in the mind of the programmer require at least one kind of website technology. So there I am again, thinking about the ✨stack✨. So we want to have something new, since doing the same thing over and over again is hardly any fun and since i have written a lot of react throughout the last years, something new had to be found. Looking at the current state of web development, although there is WASM and the idea that a few years down the road, we evantually don't have to deal with the various quirks of javascript anymore, but for now, the developer experience and productivity seems to be fairly low and espacially if you have to do a lot of back and forth between the standard Web-APIs and the WASM runtime, the performance benefits get smaller and smaller. Don't get me wrong, I am incredibly hyped to try out libraries like [yew]() and alike. But time to market is a thing and sometimes getting things done is more important than how they are done.
+Nowadays many ideas in the mind of the programmer require at least one kind of website technology. So there I am again, thinking about the ✨stack✨. So we want to have something new, since doing the same thing over and over again is hardly any fun and since i have written a lot of react throughout the last years, something new had to be found. Looking at the current state of web development, although there is WASM and the idea that a few years down the road, we evantually don't have to deal with the various quirks of javascript anymore, but for now, the developer experience and productivity seems to be fairly low and espacially if you have to do a lot of back and forth between the standard Web-APIs and the WASM runtime, the performance benefits get smaller and smaller. Don't get me wrong, I am incredibly hyped to try out libraries like yew and alike. But time to market is a thing and sometimes getting things done is more important than how they are done.
 
 ## So we are back in javascript world again
 
@@ -19,30 +19,45 @@ But than again the page that you are reading right know, is mostly static and we
 
 ## So what is this astro thingy
 
-In case you didn't click the link in the previous paragraph in pure excitement and you stayed with me, lets look at was astro has to over. Astro falls into the category of static site generators, but they addressed the issue that you typically encounter with SSG, that you always have at least some amount of dynamic content on the web page. This is were typically developers would typically use a framework, such as react, svelte, vue, etc., which makes writing client side logic extremely easy. But those frameworks impose a client side overhead when loading your webpage, either rendering or hydrating the page, which for generally highly static data, like blog or documentation pages, seems unnecessary. The approach that astro chose to this problem is writing most of your pages in a static, jsx-like, templating language, that has the added benefit that you can import and use a component of any framework. Lets look at a simple `index.astro` page, you might encounter: (ps. to bootstrap a project have a look [here](https://docs.astro.build/en/getting-started/))
+In case you didn't click the link in the previous paragraph in pure excitement and you stayed with me, lets look at was astro has to over. Astro falls into the category of static site generators, but they addressed the issue that you typically encounter with SSG, that you always have at least some amount of dynamic content on the web page. This is were typically developers would typically use a framework, such as react, svelte, vue, etc., which makes writing client side logic extremely easy. But those frameworks impose a client side overhead when loading your webpage, either rendering or hydrating the page, which for generally highly static data, like blog or documentation pages, seems unnecessary. The approach that astro chose to this problem is writing most of your pages in a static, jsx-like, templating language, that has the added benefit that you can import and use a component of any framework. Lets look at a simple `index.astro` page, you might encounter: (ps. to bootstrap a project have a look [here](https://docs.astro.build/en/getting-started/)). Please also note that this is not aimed to be a full on tutorial on how to get started in astro, since that is already covered to a great extend by the website.
+
+```js
+const a = 0;
+```
 
 ```astro
 ---
-import { Component } from "../component";
+// Hey this is normal js/ts code
+const a = 0;
+// with top level await 👍 and access to `fetch`
+const response = await fetch("https://random-data-api.com/api/color/random_color");
+const body = await response.json();
+const color = body.hex_value;
 ---
-<div>
-</div>
+<html>
+  <head>
+    <title>My Homepage</title>
+  </head>
+  <body>
+    <h1>Welcome to my website! Current color is {color}</h1>
+  </body>
+</html>
+
+<style define:vars={{ color }}>
+  body {
+    background: var(--color)
+  }
+</style>
 ```
 
-```ts twoslash
-interface IdLabel {
-    id: number /* some fields */;
-}
-interface NameLabel {
-    name: string /* other fields */;
-}
-type NameOrId<T extends number | string> = T extends number ? IdLabel : NameLabel;
-// This comment should not be included
+The first thing that becomes apparent is that every page needs to return a complete html page. We will later see how this can be abstracted away though. At the beginning of the file we have the `---` delimiters that contain the _Component Script_, here you can execute "arbitrary" javascript that will be executed during **build** time. None of that code will be bundled and send to the client, so you can use that to safely access APIs and other stuff you might do server-side. You will need to keep in mind though that everything you do in `.astro` files will never reach the client and will only be executed once during the build step. (_although_ there is a server side rendering (ssr) integration that will execute every time a page is requested, similar to `getServerSideProps` in `next.js`. You can find out more about that [here](https://docs.astro.build/en/guides/server-side-rendering/)). In the example above, we are making a request to the random-data-api, which will return us a random color. Using the quite powerful `<style>` tag we can then convert the javascript variable into a css-variable and use it to style our page. Now everytime the page gets _rebuilt_ (that is a new version is build), we get a page with a different color. Of course we could have also fetched our own api or database and display data we retrieve from there. Similar to classical jsx we can also use the declared js variables in the html template, as we have done with the color string in the `h1` text.
 
-// ---cut---
-function createLabel<T extends number | string>(idOrName: T): NameOrId<T> {
-    throw "unimplemented";
-}
+## Astro components
 
-let a = createLabel<string>("typescript");
-```
+Rewriting the same complete html document every time is not very feasible though, we can therefore use [Components](https://docs.astro.build/en/core-concepts/astro-components/) to abstract that once and reload in every page. They have the same layout as the pages and can also execute arbitrary javascript at build time. You would probably typically use that to have reusable parts of your project defined once and not many times. An example of that can be found in the
+
+## Integrations
+
+## Notes
+
+Please note however that astro is still a WIP library. Actually as I wrote this article I got a random runtime error from the astro compiler. Therefore I would not recommend using this framework for mission critical code. On the flip side however, when **not** using the SSR integration, astro builds into static html and can thus not cause runtime issues on the client side.

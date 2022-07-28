@@ -1,9 +1,8 @@
-import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
 import solid from "@astrojs/solid-js";
-import remarkShikiTwoslash from "remark-shiki-twoslash";
-import { loadTheme } from "shiki";
+import tailwind from "@astrojs/tailwind";
+import { defineConfig } from 'astro/config';
 import path from "path";
+import rehypePrettyCode from "rehype-pretty-code";
 
 import react from "@astrojs/react";
 
@@ -11,6 +10,15 @@ import react from "@astrojs/react";
 const OneLight = JSON.parse(
   fs.readFileSync(path.join(process.cwd(), "./assets/OneLight.json"), 'utf-8'),
 )
+
+/** @type {import('rehype-pretty-code').Options} */
+const codeOptions = {
+  theme: {
+    dark: "one-dark-pro",
+    light: "min-light"
+  }
+};
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,8 +28,10 @@ export default defineConfig({
     }
   },
   markdown: {
+    mode: "md",
     syntaxHighlight: false,
-    remarkPlugins: ['remark-gfm', 'remark-smartypants', [remarkShikiTwoslash.default, { themes: ['one-dark-pro', OneLight] }]],
+    rehypePlugins: [[rehypePrettyCode, codeOptions]]
+    // remarkPlugins: ['remark-gfm', 'remark-smartypants', [rehypePrettyCode, codeOptions]],
   },
   integrations: [tailwind(), react(), solid()]
 });
