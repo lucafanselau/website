@@ -18,7 +18,4 @@
         "turbo": "latest",
         "typescript": ">=3.0.0"
     },
-    "dependencies": {
-        "rust-404": "link:/Users/luca/dev/website/packages/rust-404/pkg"
-    }
 }
