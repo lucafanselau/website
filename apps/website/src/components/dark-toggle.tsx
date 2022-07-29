@@ -30,12 +30,14 @@ const state = {
     },
     handle: {
         light: {
-            rotate: "0deg",
-            translate: width - 24 + "px",
+            /* rotate: "0deg",
+             * translate: width - 24 + "px", */
+            transform: `translateX(${width - 24}px) rotate(0deg) `,
         },
         dark: {
-            rotate: "90deg",
-            translate: "4px",
+            /* rotate: "90deg",
+             * translate: "4px", */
+            transform: `translateX(4px) rotate(90deg) `,
         },
     },
 } as const;
