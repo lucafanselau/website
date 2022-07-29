@@ -48,11 +48,9 @@ impl Game {
             canvas.dyn_into::<web_sys::HtmlCanvasElement>().unwrap();
 
         let context = canvas
-            .get_context("webgl2")
-            .unwrap()
-            .unwrap()
-            .dyn_into::<WebGl2RenderingContext>()
-            .unwrap();
+            .get_context("webgl2")?
+            .ok_or("missing context")?
+            .dyn_into::<WebGl2RenderingContext>()?;
 
         // TODO: This is only a valid function for the wasm32 target (catch that, w/o rust-analyzer sucking hard)
         let context = glow::Context::from_webgl2_context(context);
