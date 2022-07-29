@@ -14,7 +14,7 @@ const instructions = {
     Space: "Move up",
     "Left 🖱": "Destroy target",
     "Right 🖱": "Build selected",
-    Escape: "Exit the game"
+    Escape: "Exit the game",
 };
 
 const kbd =
@@ -23,17 +23,19 @@ const kbd =
 
 <Layout title="Uuuups">
     <Header />
-    <div class={"flex-1 flex flex-col gap-8 items-center h-full justify-center xl:mt-8 mt-4 p-4"}>
-        <div class="flex flex-col gap-2">
+    <div class={"flex-1 flex flex-col space-y-8 items-center h-full justify-center xl:mt-8 mt-4 p-4"}>
+        <div class="flex flex-col space-y-2">
             <h1 class="font-bold text-5xl text-center">404 Page Not Found</h1>
             <p class="text-center">This page could not be found. You can however enjoy urself playing a little</p>
         </div>
+        <div class="">
         <Rust404 client:only="solid" />
+            </div>
         <div
             class={"grid gap-x-4 lg:gap-x-8 gap-y-2 p-4 items-center bg-yellow " +
                 "border-[3px] border-darker dark:border-kinda-white relative " +
                 "shadow-solid shadow-darker/25 dark:shadow-kinda-white/25 " +
-                   "inline-block rounded-2xl dark:bg-green bg-yellow overflow-hidden"}
+                "inline-block rounded-2xl dark:bg-green bg-yellow overflow-hidden"}
         >
             <h3 class="col-span-10 text-4xl mb-2">Instructions:</h3>
             {Object.entries(instructions).map(([key, value]) => (
@@ -43,6 +45,13 @@ const kbd =
                 </>
             ))}
         </div>
-            <p class="text-sm max-w-[400px] text-center">Note: Due to the missing pointer-lock api on mobile devices, this is currently only playable in desktop browsers</p>
+        <p class="text-sm max-w-[400px] text-center">
+            Notes:<br /> Due to the missing pointer-lock api on mobile devices, this is currently only playable in desktop browsers.<br /> The
+            game uses WebGl2 which is an experimental feature for Safari versions less than 15. <a
+                href={"https://apple.stackexchange.com/questions/407754/safari-14-0-webgl-disabled#:~:text=To%20enable%20WebGL%202%20on,Develop%20menu%20in%20menu%20bar%22.&text=Voila%2C%20WebGL%202%20is%20active."}
+                class="underline"
+                >See Here
+            </a>
+        </p>
     </div>
 </Layout>

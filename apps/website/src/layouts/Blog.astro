@@ -7,10 +7,10 @@ import Header from "../components/Header.astro";
 const { content } = Astro.props;
 ---
 
-<Layout title={content.title}>
+<Layout title={content.title} description={content.description}>
     <Header />
-    <div class="container isolate relative mx-auto py-4 flex-1 h-full flex flex-col p-1">
-        <article class="prose prose-raisin dark:prose-invert mx-auto lg:prose-xl">
+    <div class="container max-w-screen relative mx-auto py-4 flex-1 h-full flex flex-col p-1">
+        <article class="max-w-full prose prose-raisin dark:prose-invert mx-auto lg:prose-xl">
             <slot />
         </article>
     </div>
