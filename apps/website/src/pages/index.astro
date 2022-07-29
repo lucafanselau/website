@@ -10,21 +10,14 @@ import Header from "../components/Header.astro";
     title="guythat.codes"
     description="Hi There, I am Luca! A Developer based in Germany with interest in systems programming and 3d graphics. This is my portfolio website."
 >
-    <div class="h-screen flex flex-col isolate ">
+    <div class="h-screen flex flex-col isolate">
         <Header path={"/"} />
         <div class="flex-1  relative">
             <World client:idle />
-            {/* <div> */}
-            {/* 	<div class="h-[400px]" /> */}
-            {/* 	<h1 class="font-bold text-5xl mt-8 text-center">Hi <span class="text-yellow">there</span>,<br/>I am Luca</h1> */}
-            {/* 	<div class="h-[400px]" /> */}
-            {/* 	<div class="relative"> */}
-            {/* 		<div class="absolute top-0 left-0 w-full h-full bg-yellow dark:bg-light-green blend mix-blend-difference isolate -z-10" /> */}
-            {/* 		<div class="h-[400px]" /> */}
-            {/* 		<h1 class="font-bold text-5xl mt-8">Blog Posts</h1> */}
-            {/* 		<div class="h-[400px]" /> */}
-            {/* 	</div> */}
-            {/* </div> */}
         </div>
+        <div class="w-full p-4 rounded-md bg-light-green dark:bg-dark">
+                    <h1 class="text-3xl text-center mb-2">Hi there, I am <span class="text-green dark:text-yellow">Luca</span>, the guy that ✨still✨ codes this landingpage.</h1>
+                    <h2 class="text-lg text-center">If you want to reach me though, hit me up via <a href="mailto:luca@guythat.codes" class="underline">Email</a></h2>
+                    </div>
     </div>
 </Layout>
