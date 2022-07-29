@@ -21,15 +21,25 @@ export const Rust404: Component = () => {
         const now = window.performance.now();
         if (game === undefined) {
             // initialize the whole shit
-            await init();
-            game = await Game.new();
-            // initialize the
-            startup = now;
+            try {
+                if (p !== undefined) p.textContent = "Loading...";
+                await init();
+                game = await Game.new();
+                // initialize the
+                startup = now;
+                if (p !== undefined) p.textContent = "Click to start adventure";
+            } catch (err) {
+                console.error("failed to create game instance");
+                if (p !== undefined) p.textContent = "Failed to load game. See Notes for more Information";
+            }
         }
+
+        console.log("got here");
 
         // NOTE: there is an issue with pointer lock in chrome (or others (not tested))
         // https://discourse.threejs.org/t/how-to-avoid-pointerlockcontrols-error/33017
-        if (!running) {
+        if (!running && game !== undefined) {
+            console.log("and here", canvas);
             canvas?.requestPointerLock();
         }
     };
@@ -59,7 +69,7 @@ export const Rust404: Component = () => {
                 "max-w-[600px] w-full"
             }
         >
-            <canvas ref={canvas} id={"canvas"} width={600} height={400} onClick={onClick} />
+            <canvas ref={canvas} id={"canvas"} width={600} height={400} onClick={onClick} onContextMenu={e => e.preventDefault()} />
             <p
                 ref={p}
                 class="absolute pointer-events-none top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-2 bg-yellow rounded-xl dark:bg-darker border-[2px] border-darker dark:border-kinda-white"

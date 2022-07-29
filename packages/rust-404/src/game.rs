@@ -37,7 +37,8 @@ pub struct Game {
 
 #[wasm_bindgen]
 impl Game {
-    pub async fn new() -> Self {
+    #[wasm_bindgen(catch)]
+    pub async fn new() -> Result<Game, JsValue> {
         utils::set_panic_hook();
 
         let window = web_sys::window().unwrap();
@@ -56,14 +57,12 @@ impl Game {
         // TODO: This is only a valid function for the wasm32 target (catch that, w/o rust-analyzer sucking hard)
         let context = glow::Context::from_webgl2_context(context);
 
-        let input =
-            InputManager::new(&window.document().unwrap()).expect("failed to create input manager");
+        let input = InputManager::new(&*window.document().ok_or("missing document")?)
+            .map_err(|e| e.to_string())?; // ..expect("failed to create input manager");
         let camera = Camera::new();
 
         let renderer = Rc::new(
-            Renderer::new(context)
-                .await
-                .expect("failed to create renderer"),
+            Renderer::new(context).await.map_err(|e| e.to_string())?, // .expect("failed to create renderer"),
         );
 
         // let vertices = cube(glam::Vec3::splat(1.0));
@@ -79,7 +78,7 @@ impl Game {
 
         let world = World::new(renderer.clone());
 
-        Self {
+        Ok(Self {
             input,
             input_state: Default::default(),
             camera,
@@ -91,7 +90,7 @@ impl Game {
 
             selection_ring,
             crosshair,
-        }
+        })
     }
 
     pub fn update(&mut self, dt: f32, total: f32) -> bool {
