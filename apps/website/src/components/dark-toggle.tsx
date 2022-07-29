@@ -112,14 +112,22 @@ export const DarkToggle: Component = () => {
         <button
             onClick={toggleTheme}
             class={"rounded-full box-content border-2 border-dark dark:border-kinda-white relative " + widthClass + " h-[28px]"}
+            aria-label="Dark-/Light-Mode Switch"
         >
             <Show when={typeof window !== "undefined"}>
-                <img style={state["sun"][initial]} ref={el.sun} src={sunSource} class="absolute left-[6px] top-[6px] w-[16px] h-[16px]" />
+                <img
+                    alt={"sun icon"}
+                    style={state["sun"][initial]}
+                    ref={el.sun}
+                    src={sunSource}
+                    class="absolute left-[6px] top-[6px] w-[16px] h-[16px]"
+                />
                 <img
                     style={state["moon"][initial]}
                     ref={el.moon}
                     src={moonSource}
                     class="absolute right-[6px] top-[6px] w-[16px] h-[16px]"
+                    alt={"moon icon"}
                 />
                 <svg
                     ref={el.handle}
