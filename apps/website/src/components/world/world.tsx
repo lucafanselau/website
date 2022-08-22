@@ -7,6 +7,7 @@ import { FC, ReactNode, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Group, Mesh } from "three";
 import { PlanetPolyhedronGeometry } from "./ico-planet";
+import GuyThat from "./other-guy";
 
 const mode = import.meta.env.MODE;
 /* extend({ PlanetGeometry }); */
@@ -53,7 +54,7 @@ const Planet: FC = props => {
         parent.current && (parent.current.rotation.y = Math.PI * scroll.range(0, 1));
 
         /* camera.position.set(0,); */
-        camera.position.set(0, 2.4 * scroll.range(0, 1), 0.5 + 4 * (1 - scroll.range(0, 1)));
+        camera.position.set(0, 2.3 * scroll.range(0, 1), 0.5 + 4 * (1 - scroll.range(0, 1)));
         /* console.log(camera.position); */
         camera.lookAt(0, 2.2 * scroll.range(0, 1), 0);
 
@@ -73,6 +74,11 @@ const Planet: FC = props => {
     );
 };
 
+const TheGuy = () => {
+    const scroll = useScroll();
+    return <GuyThat scale={0.03} position={[0, 2, 0]} />;
+};
+
 const Content: FC = () => {
     const size = useThree(s => s.size);
     const domElement = useThree(s => s.gl.domElement);
@@ -90,9 +96,10 @@ const World: FC<{ children?: ReactNode }> = ({ children }) => {
     return (
         <Canvas>
             <ScrollControls pages={3}>
-                <Loader />
+                {/* <Loader /> */}
                 <Planet />
-                <Content />
+                <TheGuy />
+                {/* <Content /> */}
                 <spotLight position={[5, 15, 7]} angle={0.3} penumbra={1} castShadow intensity={0.5} shadow-bias={-0.0001} />
                 <directionalLight position={[-5, 5, 7]} castShadow intensity={0.7} shadow-bias={-0.0001} />
                 <ambientLight intensity={0.2} />

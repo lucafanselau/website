@@ -1,4 +1,4 @@
-import { BufferGeometry, Float32BufferAttribute, Vector2, Vector3 } from "three";
+import { BufferGeometry, Float32BufferAttribute, MathUtils, Vector2, Vector3 } from "three";
 import { Noiser, Options } from "./noise";
 
 class PlanetPolyhedronGeometry extends BufferGeometry {
@@ -6,6 +6,7 @@ class PlanetPolyhedronGeometry extends BufferGeometry {
     constructor(radius = 1, detail = 0, options?: Options) {
         super();
         const t = (1 + Math.sqrt(5)) / 2;
+        const up = new Vector3(0, 1, 0);
 
         const vertices = [
             -1,
@@ -62,8 +63,8 @@ class PlanetPolyhedronGeometry extends BufferGeometry {
 
         // default buffer data
 
-        const vertexBuffer = [];
-        const uvBuffer = [];
+        const vertexBuffer: number[] = [];
+        const uvBuffer: number[] = [];
 
         // the subdivision creates the vertex buffer data
 
@@ -162,13 +163,22 @@ class PlanetPolyhedronGeometry extends BufferGeometry {
             const vertex = new Vector3();
 
             // NOTE: this is my addition, we offset the vertex point by sampling a 3d noise
-            const noiser = new Noiser(options);
+            const noiser = options ? new Noiser(options) : null;
+            const cutoff = MathUtils.degToRad(5);
 
             for (let i = 0; i < vertexBuffer.length; i += 3) {
                 vertex.x = vertexBuffer[i + 0];
                 vertex.y = vertexBuffer[i + 1];
                 vertex.z = vertexBuffer[i + 2];
-                const noise = noiser.sample3d(vertex);
+
+                const angle = vertex.angleTo(up);
+
+                let noise = 0;
+                if (angle < cutoff) {
+                    noise = 0.01;
+                } else {
+                    noise = noiser?.sample3d(vertex) ?? 0;
+                }
 
                 const currentRadius = radius + noise;
 
