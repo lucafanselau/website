@@ -1,11 +1,13 @@
 /** @jsxImportSource react */
 
-import { Environment, Html, Loader, Scroll, ScrollControls, Stats, useScroll } from "@react-three/drei";
+import { Billboard, Environment, Html, Loader, Scroll, ScrollControls, Stats, useScroll } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useControls } from "leva";
+import React from "react";
 import { FC, ReactNode, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Group, Mesh } from "three";
+import SvgBubble from "./bubble";
 import { PlanetPolyhedronGeometry } from "./ico-planet";
 import GuyThat from "./other-guy";
 
@@ -75,8 +77,30 @@ const Planet: FC = props => {
 };
 
 const TheGuy = () => {
+    const billboard = useRef<Group>(null);
+    const bubble = useRef<HTMLDivElement>(null);
     const scroll = useScroll();
-    return <GuyThat scale={0.03} position={[0, 2, 0]} />;
+
+    useFrame(() => {
+        if (bubble.current) bubble.current.style.opacity = +scroll.range(0.9, 0.1);
+    });
+
+    return (
+        <group position={[0, 2, 0]}>
+            <GuyThat scale={0.03}></GuyThat>
+
+            <Billboard ref={billboard} position={[0, 0.22, 0]}>
+                <Html ref={bubble}>
+                    <div id="holder" className="-translate-x-full -translate-y-full relative">
+                        <SvgBubble className="" />
+                        <div id="content" className="p-4 absolute top-0 left-0 w-full h-full">
+                            <h1>Hi There, I am Luca</h1>
+                        </div>
+                    </div>
+                </Html>
+            </Billboard>
+        </group>
+    );
 };
 
 const Content: FC = () => {

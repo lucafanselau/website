@@ -55,18 +55,21 @@ export default function Model({ ...props }: JSX.IntrinsicElements["group"]) {
                     <primitive object={nodes.Bone} />
                     <skinnedMesh
                         name="pants"
+                        castShadow
                         geometry={nodes.pants.geometry}
                         material={materials["Material.004"]}
                         skeleton={nodes.pants.skeleton}
                     />
                     <skinnedMesh
                         name="scheguy"
+                        castShadow
                         geometry={nodes.scheguy.geometry}
                         material={materials.skin}
                         skeleton={nodes.scheguy.skeleton}
                     />
                     <skinnedMesh
                         name="sweater"
+                        castShadow
                         geometry={nodes.sweater.geometry}
                         material={materials["Material.006"]}
                         skeleton={nodes.sweater.skeleton}
