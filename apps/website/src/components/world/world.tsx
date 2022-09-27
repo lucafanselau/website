@@ -82,7 +82,7 @@ const TheGuy = () => {
     const scroll = useScroll();
 
     useFrame(() => {
-        if (bubble.current) bubble.current.style.opacity = +scroll.range(0.9, 0.1);
+        if (bubble.current) bubble.current.style.opacity = scroll.range(0.9, 0.1).toString();
     });
 
     return (
@@ -90,7 +90,7 @@ const TheGuy = () => {
             <GuyThat scale={0.03}></GuyThat>
 
             <Billboard ref={billboard} position={[0, 0.22, 0]}>
-                <Html ref={bubble}>
+                <Html ref={bubble} className="pointer-events-none">
                     <div id="holder" className="-translate-x-full -translate-y-full relative">
                         <SvgBubble className="" />
                         <div id="content" className="p-4 absolute top-0 left-0 w-full h-full">
