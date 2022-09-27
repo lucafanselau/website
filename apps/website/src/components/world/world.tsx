@@ -128,7 +128,7 @@ const World: FC<{ children?: ReactNode }> = ({ children }) => {
                 <directionalLight position={[-5, 5, 7]} castShadow intensity={0.7} shadow-bias={-0.0001} />
                 <ambientLight intensity={0.2} />
                 {/* <ContactShadows resolution={1024} frames={1} position={[0, -1.16, 0]} scale={10} blur={3} opacity={1} far={10} /> */}
-                <Environment preset={"sunset"} />
+                {/* <Environment preset={"sunset"} /> */}
                 {mode === "development" && <Stats />}
             </ScrollControls>
         </Canvas>
